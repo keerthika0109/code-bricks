@@ -1,0 +1,7 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cat-search input { width: 320px; padding: 12px 16px; border: 1px solid #e5e7eb; border-radius: 10px; outline: none; }
+.cat-tabs { display: flex; gap: 6px; }
+.cat-tab { padding: 6px 14px; border-radius: 20px; border: 1px solid #e5e7eb; background: white; font-size: 12px; cursor: pointer; }
+.cat-tab.active { background: var(--accent); color: white; border-color: var(--accent); }

@@ -1,0 +1,6 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #faf5ff; margin: 0; }
+.drag-list { list-style: none; width: 240px; margin: 0 auto; }
+.drag-list li { padding: 14px; background: white; border-radius: 8px; margin-bottom: 8px; border-left: 4px solid var(--accent); cursor: grab; transition: transform 0.2s ease, opacity 0.2s ease; }
+.drag-list li.dragging { opacity: 0.4; }

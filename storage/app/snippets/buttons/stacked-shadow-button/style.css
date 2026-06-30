@@ -1,0 +1,5 @@
+:root { --btn-bg: #fde047; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fafafa; font-family: system-ui, sans-serif; }
+.stacked-btn { padding: 14px 34px; font-size: 16px; font-weight: 700; color: #1f2937; background: var(--btn-bg); border: 2px solid #1f2937; border-radius: 4px; cursor: pointer; box-shadow: 3px 3px 0 #1f2937, 6px 6px 0 rgba(31,41,55,0.4); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.stacked-btn:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 #1f2937, 9px 9px 0 rgba(31,41,55,0.3); }

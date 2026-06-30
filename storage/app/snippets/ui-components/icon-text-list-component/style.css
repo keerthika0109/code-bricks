@@ -1,0 +1,5 @@
+:root { --check-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.feature-list { list-style: none; font-size: 14px; color: #374151; }
+.feature-list li { padding: 6px 0; color: var(--check-color); font-weight: 600; }

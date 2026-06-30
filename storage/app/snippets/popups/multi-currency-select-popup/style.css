@@ -1,0 +1,11 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen26 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.pp-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.curr-pp-box { width: 280px; padding: 26px; background: white; border-radius: 14px; }
+.curr-pp-box h3 { margin-bottom: 14px; text-align: center; }
+.curr-pp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 16px; }
+.curr-pp-opt { padding: 10px; border: 2px solid #e5e7eb; border-radius: 8px; background: white; cursor: pointer; font-size: 12px; }
+.curr-pp-opt.active { border-color: var(--accent); background: #f0fdf4; color: var(--accent); }
+.curr-pp-box > button:last-child { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

@@ -1,0 +1,6 @@
+:root { --accent: #4338ca; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.state-btn { padding: 12px 28px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; min-width: 140px; }
+.state-btn.loading .state-label::after { content: ''; display: inline-block; width: 12px; height: 12px; margin-left: 8px; border: 2px solid rgba(255,255,255,0.4); border-top-color: white; border-radius: 50%; animation: spin-state 0.6s linear infinite; vertical-align: middle; }
+@keyframes spin-state { to { transform: rotate(360deg); } }

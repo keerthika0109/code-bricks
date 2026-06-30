@@ -1,0 +1,5 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn17 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-grouped-toast { position: fixed; bottom: 24px; right: 24px; background: var(--accent); color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; }

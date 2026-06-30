@@ -1,0 +1,35 @@
+/vendor
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/storage/app/public
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*.php
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+.DS_Store
+
+# Keep folder structure but ignore generated zips
+/storage/app/tmp/*
+!/storage/app/tmp/.gitkeep
+
+# Frontend (React/Vite)
+/frontend/node_modules
+/frontend/dist
+/frontend/.env
+/frontend/.env.local
+

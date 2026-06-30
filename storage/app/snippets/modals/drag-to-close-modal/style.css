@@ -1,0 +1,8 @@
+:root { --accent: #334155; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#mdOpen11 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.bottom-aligned { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: flex-end; justify-content: center; }
+.drag-box { width: 100%; max-width: 380px; background: white; border-radius: 18px 18px 0 0; padding: 14px 24px 26px; text-align: center; transition: transform 0.2s ease; }
+.drag-handle { width: 40px; height: 4px; background: #d1d5db; border-radius: 4px; margin: 0 auto 16px; cursor: grab; }
+.drag-box p { font-size: 13px; color: #6b7280; }

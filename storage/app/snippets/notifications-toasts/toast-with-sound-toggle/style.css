@@ -1,0 +1,6 @@
+:root { --accent: #4338ca; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn23 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-sound-toast { position: fixed; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 12px; background: #1f2937; color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; }
+.nt-sound-toast button { background: none; border: none; color: white; cursor: pointer; font-size: 14px; }

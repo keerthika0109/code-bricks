@@ -1,0 +1,9 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-feedback-wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-beta-tag { background: #f3e8ff; color: var(--accent); font-size: 9px; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+.hd-feedback-wrap nav { display: flex; align-items: center; gap: 14px; }
+.hd-feedback-wrap nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-feedback-btn { border: 1px solid var(--accent); background: white; color: var(--accent); padding: 7px 14px; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; }

@@ -1,0 +1,7 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 200px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.mob-screen { display: flex; height: 100%; }
+.quick-reply-row { display: flex; gap: 8px; flex-wrap: wrap; padding: 0 16px; }
+.qr-chip { padding: 8px 14px; border-radius: 20px; border: 1px solid var(--accent); background: white; color: var(--accent); font-size: 12px; cursor: pointer; }

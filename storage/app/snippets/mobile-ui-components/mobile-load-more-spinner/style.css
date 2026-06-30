@@ -1,0 +1,8 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 320px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.list-item-mock { padding: 16px 20px; border-bottom: 1px solid #f3f4f6; font-size: 13px; }
+.load-more-footer { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 16px; font-size: 12px; color: #9ca3af; }
+.load-more-spinner { width: 14px; height: 14px; border: 2px solid #e5e7eb; border-top-color: var(--accent); border-radius: 50%; animation: spin-load-more 0.7s linear infinite; }
+@keyframes spin-load-more { to { transform: rotate(360deg); } }

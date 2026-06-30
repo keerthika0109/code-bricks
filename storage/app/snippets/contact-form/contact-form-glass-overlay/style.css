@@ -1,0 +1,8 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.cf-glass-form { width: 300px; padding: 28px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 16px; backdrop-filter: blur(12px); color: white; }
+.cf-glass-form h2 { margin-bottom: 16px; }
+.cf-glass-form input, .cf-glass-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: none; background: rgba(255,255,255,0.2); border-radius: 8px; color: white; font-family: inherit; }
+.cf-glass-form input::placeholder, .cf-glass-form textarea::placeholder { color: rgba(255,255,255,0.7); }
+.cf-glass-form textarea { height: 70px; resize: none; }
+.cf-glass-form button { width: 100%; padding: 11px; background: white; color: #667eea; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

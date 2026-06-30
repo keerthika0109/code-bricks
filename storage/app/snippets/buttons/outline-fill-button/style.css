@@ -1,0 +1,7 @@
+:root { --btn-color: #ef4444; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.outline-fill-btn { position: relative; padding: 14px 36px; font-size: 16px; font-weight: 600; color: var(--btn-color); background: transparent; border: 2px solid var(--btn-color); border-radius: 8px; cursor: pointer; overflow: hidden; z-index: 1; transition: color 0.4s ease; }
+.outline-fill-btn::before { content: ''; position: absolute; inset: 0; background: var(--btn-color); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; z-index: -1; }
+.outline-fill-btn:hover { color: white; }
+.outline-fill-btn:hover::before { transform: scaleX(1); }

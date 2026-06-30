@@ -1,0 +1,11 @@
+:root { --panel-bg: #1d4ed8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.illus-wrap { display: flex; min-height: 100vh; }
+.illus-panel { flex: 1; background: var(--panel-bg); display: flex; align-items: center; justify-content: center; }
+.illus-form { flex: 1; display: flex; align-items: center; justify-content: center; background: #fff; }
+.illus-form form, .illus-form { padding: 20px; }
+.illus-form h2 { margin-bottom: 18px; }
+.illus-form input { width: 280px; padding: 12px; margin-bottom: 12px; border: 1px solid #e5e7eb; border-radius: 8px; display: block; }
+.illus-form button { width: 280px; padding: 12px; background: var(--panel-bg); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .illus-wrap { flex-direction: column; } .illus-panel { padding: 30px; } }

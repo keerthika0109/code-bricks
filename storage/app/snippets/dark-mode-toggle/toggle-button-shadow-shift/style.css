@@ -1,0 +1,6 @@
+:root { --accent: #fbbf24; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.shadow-shift-btn { padding: 12px 24px; border: none; border-radius: 10px; background: white; cursor: pointer; font-weight: 600; box-shadow: -6px -6px 14px rgba(255,255,255,0.7), 6px 6px 14px rgba(0,0,0,0.1); transition: all 0.3s ease; }
+body.dark .shadow-shift-btn { background: #1e293b; color: white; box-shadow: 6px 6px 14px rgba(0,0,0,0.4), -6px -6px 14px rgba(255,255,255,0.03); }

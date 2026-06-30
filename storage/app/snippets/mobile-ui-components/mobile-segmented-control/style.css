@@ -1,0 +1,8 @@
+:root { --accent: #111827; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 200px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; display: flex; align-items: center; justify-content: center; }
+.mob-segment { position: relative; display: flex; background: #f3f4f6; border-radius: 10px; padding: 4px; width: 220px; }
+.ms-opt { flex: 1; position: relative; z-index: 1; padding: 8px 0; background: none; border: none; font-size: 13px; font-weight: 600; color: #6b7280; cursor: pointer; }
+.ms-opt.active { color: white; }
+.ms-pill { position: absolute; top: 4px; left: 4px; width: calc(50% - 4px); height: calc(100% - 8px); background: var(--accent); border-radius: 8px; transition: transform 0.3s ease; }

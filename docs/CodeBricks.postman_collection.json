@@ -1,0 +1,268 @@
+{
+  "info": {
+    "name": "CodeBricks API",
+    "description": "Complete API collection for CodeBricks. Import into Postman, set `base_url` and `token` collection variables, and every endpoint is ready to test. Login first to auto-fill {{token}} via the request's 'Tests' script.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:8000/api/v1" },
+    { "key": "token", "value": "" },
+    { "key": "design_id", "value": "1" },
+    { "key": "section_slug", "value": "login" }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/auth/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"Password123\",\n  \"password_confirmation\": \"Password123\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Login (Super Admin)",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": ["const data = pm.response.json();", "if (data.success) { pm.collectionVariables.set('token', data.data.token); }"] }
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/auth/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"rohit@xyz.com\",\n  \"password\": \"Pass@word1\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Login (Normal User)",
+          "event": [{
+            "listen": "test",
+            "script": { "exec": ["const data = pm.response.json();", "if (data.success) { pm.collectionVariables.set('token', data.data.token); }"] }
+          }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/auth/login",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"aarav@example.com\",\n  \"password\": \"password\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Me",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{base_url}}/auth/me"
+          }
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{base_url}}/auth/refresh"
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+            "url": "{{base_url}}/auth/logout"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sections (Public)",
+      "item": [
+        { "name": "List Sections", "request": { "method": "GET", "url": "{{base_url}}/sections" } },
+        { "name": "Get Section by Slug", "request": { "method": "GET", "url": "{{base_url}}/sections/{{section_slug}}" } }
+      ]
+    },
+    {
+      "name": "Designs (Public)",
+      "item": [
+        { "name": "List Designs", "request": { "method": "GET", "url": "{{base_url}}/designs?section_slug={{section_slug}}" } },
+        { "name": "Design Detail (with code)", "request": { "method": "GET", "url": "{{base_url}}/designs/{{design_id}}" } },
+        {
+          "name": "Preview with Customizer Overrides",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/designs/{{design_id}}/preview",
+            "body": { "mode": "raw", "raw": "{\n  \"overrides\": { \"--primary-color\": \"#ff0000\" }\n}" }
+          }
+        },
+        {
+          "name": "Download ZIP",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/designs/{{design_id}}/download",
+            "body": { "mode": "raw", "raw": "{\n  \"overrides\": {}\n}" }
+          }
+        },
+        { "name": "Design Reviews", "request": { "method": "GET", "url": "{{base_url}}/designs/{{design_id}}/reviews" } }
+      ]
+    },
+    {
+      "name": "Authenticated User",
+      "item": [
+        { "name": "Get Profile", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/profile" } },
+        {
+          "name": "Update Profile",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/profile",
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Jane Updated\"\n}" }
+          }
+        },
+        { "name": "List Wishlist", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/wishlist" } },
+        {
+          "name": "Add to Wishlist",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/wishlist",
+            "body": { "mode": "raw", "raw": "{\n  \"design_id\": {{design_id}}\n}" }
+          }
+        },
+        { "name": "Toggle Wishlist", "request": { "method": "POST", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/wishlist/{{design_id}}/toggle" } },
+        { "name": "Remove from Wishlist", "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/wishlist/{{design_id}}" } },
+        {
+          "name": "Submit Review",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/reviews",
+            "body": { "mode": "raw", "raw": "{\n  \"design_id\": {{design_id}},\n  \"rating\": 5,\n  \"comment\": \"Loved this design!\"\n}" }
+          }
+        },
+        { "name": "My Reviews", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/reviews/mine" } }
+      ]
+    },
+    {
+      "name": "Suggestions (Public + Auth)",
+      "item": [
+        {
+          "name": "Submit Suggestion (Guest)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/suggestions",
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Guest User\",\n  \"email\": \"guest@example.com\",\n  \"subject\": \"Feature request\",\n  \"message\": \"Please add a Sliders section!\"\n}" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin — Dashboard",
+      "item": [
+        { "name": "Dashboard Overview", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/dashboard" } }
+      ]
+    },
+    {
+      "name": "Admin — Users",
+      "item": [
+        { "name": "List Users", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/users" } },
+        { "name": "User Stats (new vs old)", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/users/stats" } },
+        { "name": "Get Single User", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/users/2" } },
+        { "name": "Deactivate User", "request": { "method": "PATCH", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/users/2/deactivate" } },
+        { "name": "Activate User", "request": { "method": "PATCH", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/users/2/activate" } },
+        { "name": "Delete User", "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/users/2" } }
+      ]
+    },
+    {
+      "name": "Admin — Sections",
+      "item": [
+        { "name": "List Sections (Admin)", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/sections" } },
+        {
+          "name": "Create Section",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/admin/sections",
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Sliders\",\n  \"icon\": \"sliders-horizontal\",\n  \"description\": \"Image and content sliders/carousels\"\n}" }
+          }
+        },
+        {
+          "name": "Update Section",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/admin/sections/1",
+            "body": { "mode": "raw", "raw": "{\n  \"description\": \"Updated description\"\n}" }
+          }
+        },
+        { "name": "Delete Section", "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/sections/1" } }
+      ]
+    },
+    {
+      "name": "Admin — Designs",
+      "item": [
+        {
+          "name": "Create Design (Add new login design)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/admin/designs",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"section_id\": 1,\n  \"section_slug\": \"login\",\n  \"title\": \"Neon Glow Login\",\n  \"description\": \"Dark theme with neon accents\",\n  \"html\": \"<form class='card'><h1>Sign In</h1></form>\",\n  \"css\": \":root{--primary-color:#0ff;} .card{color:var(--primary-color);}\",\n  \"js\": \"\",\n  \"customizable_vars\": { \"--primary-color\": \"#0ff\" },\n  \"tags\": [\"neon\", \"dark\"]\n}"
+            }
+          }
+        },
+        {
+          "name": "Update Design Meta",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/admin/designs/{{design_id}}/meta",
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Updated Title\"\n}" }
+          }
+        },
+        {
+          "name": "Update Design Files",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }, { "key": "Content-Type", "value": "application/json" }],
+            "url": "{{base_url}}/admin/designs/{{design_id}}/files",
+            "body": { "mode": "raw", "raw": "{\n  \"css\": \":root{--primary-color:#333;}\"\n}" }
+          }
+        },
+        { "name": "Delete Design", "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/designs/{{design_id}}" } }
+      ]
+    },
+    {
+      "name": "Admin — Reviews",
+      "item": [
+        { "name": "List Reviews (pending)", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/reviews?status=pending" } },
+        { "name": "Approve Review", "request": { "method": "PATCH", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/reviews/1/approve" } },
+        { "name": "Reject Review", "request": { "method": "PATCH", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/reviews/1/reject" } },
+        { "name": "Delete Review", "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/reviews/1" } }
+      ]
+    },
+    {
+      "name": "Admin — Suggestions",
+      "item": [
+        { "name": "List Suggestions", "request": { "method": "GET", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/suggestions" } },
+        { "name": "Mark as Read", "request": { "method": "PATCH", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/suggestions/1/read" } },
+        { "name": "Mark as Resolved", "request": { "method": "PATCH", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/suggestions/1/resolve" } },
+        { "name": "Delete Suggestion", "request": { "method": "DELETE", "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }], "url": "{{base_url}}/admin/suggestions/1" } }
+      ]
+    }
+  ]
+}

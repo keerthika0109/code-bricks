@@ -1,0 +1,27 @@
+{
+  "name": "codebricks",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CodeBricks — Learn UI by Copying Real Code. Laravel (Service-Repository pattern) API + React frontend, run together.",
+  "scripts": {
+    "install:all": "composer install && npm install --prefix frontend",
+    "dev": "concurrently -n LARAVEL,REACT -c blue,magenta \"php artisan serve\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend",
+    "migrate": "php artisan migrate",
+    "seed": "php artisan db:seed",
+    "fresh": "php artisan migrate:fresh --seed",
+    "key:generate": "php artisan key:generate",
+    "jwt:secret": "php artisan jwt:secret"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.3"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

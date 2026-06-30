@@ -1,0 +1,6 @@
+:root { --toast-bg: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#toastTrigger { padding: 12px 24px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.toast-slide { position: fixed; top: 24px; right: -350px; background: var(--toast-bg); color: white; padding: 14px 22px; border-radius: 8px; font-weight: 600; transition: right 0.4s ease; }
+.toast-slide.show { right: 24px; }

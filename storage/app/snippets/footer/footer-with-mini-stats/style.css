@@ -1,0 +1,8 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-stats-wrap { text-align: center; padding: 30px; background: #f9fafb; }
+.ft-stats-row { display: flex; justify-content: center; gap: 30px; margin-bottom: 16px; }
+.ft-stats-row strong { display: block; font-size: 20px; color: var(--accent); }
+.ft-stats-row span { font-size: 11px; color: #6b7280; }
+.ft-stats-wrap p { font-size: 11px; color: #9ca3af; }

@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.seg-bar { display: flex; width: 280px; height: 10px; border-radius: 6px; overflow: hidden; background: #f3f4f6; }
+.seg { height: 100%; }
+.seg-legend { display: flex; gap: 14px; font-size: 11px; color: #6b7280; }
+.seg-legend span { display: flex; align-items: center; gap: 4px; }
+.seg-legend i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }

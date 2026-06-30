@@ -1,0 +1,7 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.hint-search { display: flex; align-items: center; width: 280px; border: 1px solid #e5e7eb; border-radius: 8px; padding: 0 10px; }
+.hint-search input { flex: 1; border: none; outline: none; padding: 11px 0; }
+.hint-search kbd { background: #f3f4f6; padding: 3px 8px; border-radius: 5px; font-size: 12px; color: #6b7280; }
+.hint-search:has(input:focus) { border-color: var(--accent); }

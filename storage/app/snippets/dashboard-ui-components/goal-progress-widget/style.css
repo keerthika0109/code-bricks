@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.goal-widget { width: 200px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; text-align: center; }
+.goal-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.goal-widget p { margin-top: 10px; font-size: 13px; font-weight: 700; color: #7c3aed; }

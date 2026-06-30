@@ -1,0 +1,6 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-glass-wrap { background: linear-gradient(135deg, #667eea, #764ba2); padding: 30px; }
+.ft-glass-inner { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); border-radius: 14px; padding: 20px; backdrop-filter: blur(10px); color: white; text-align: center; }
+.ft-glass-inner span { font-weight: 800; display: block; margin-bottom: 6px; }
+.ft-glass-inner p { font-size: 12px; opacity: 0.85; }

@@ -1,0 +1,10 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen9 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.app-pp-banner { position: fixed; top: 0; left: 0; right: 0; background: white; border-bottom: 1px solid #e5e7eb; padding: 12px 16px; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.app-pp-icon { font-size: 22px; }
+.app-pp-banner strong { display: block; font-size: 13px; }
+.app-pp-banner span { font-size: 11px; color: #9ca3af; }
+.app-pp-cta { margin-left: auto; padding: 7px 14px; background: var(--accent); color: white; border: none; border-radius: 6px; font-size: 12px; cursor: pointer; }
+.app-pp-x { background: none; border: none; cursor: pointer; color: #9ca3af; }

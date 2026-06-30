@@ -1,0 +1,5 @@
+:root { --ring-color: #8b5cf6; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.ring-loader { width: 60px; height: 60px; border: 6px solid #e5e7eb; border-top-color: var(--ring-color); border-radius: 50%; animation: spin-ring 0.8s linear infinite; }
+@keyframes spin-ring { to { transform: rotate(360deg); } }

@@ -1,0 +1,12 @@
+:root { --accent: #475569; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.contrast-bar { width: 140px; height: 10px; border-radius: 6px; background: linear-gradient(90deg, #fff, #e5e7eb); transition: background 0.3s ease; }
+.contrast-bar.dark-bar { background: linear-gradient(90deg, #334155, #0f172a); }
+.contrast-toggle { position: relative; width: 50px; height: 26px; }
+.contrast-toggle input { opacity: 0; }
+.contrast-slider { position: absolute; inset: 0; background: #d1d5db; border-radius: 26px; cursor: pointer; transition: 0.3s; }
+.contrast-slider::before { content: ''; position: absolute; width: 20px; height: 20px; left: 3px; top: 3px; background: white; border-radius: 50%; transition: 0.3s; }
+input:checked + .contrast-slider { background: var(--accent); }
+input:checked + .contrast-slider::before { transform: translateX(24px); }

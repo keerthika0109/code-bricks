@@ -1,0 +1,8 @@
+:root { --accent: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-lang-wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-lang-wrap nav { display: flex; align-items: center; gap: 16px; }
+.hd-lang-wrap nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-lang-select { border: 1px solid #e5e7eb; border-radius: 6px; padding: 6px 8px; font-size: 12px; }

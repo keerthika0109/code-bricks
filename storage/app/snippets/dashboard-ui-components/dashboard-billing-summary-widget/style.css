@@ -1,0 +1,8 @@
+:root { --accent: #1e40af; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.billing-widget { width: 240px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.billing-widget h4 { margin-bottom: 10px; font-size: 13px; }
+.billing-plan { font-weight: 700; margin-bottom: 4px; }
+.billing-next { font-size: 11px; color: #9ca3af; margin-bottom: 14px; }
+.billing-widget button { width: 100%; padding: 9px; background: var(--accent); color: white; border: none; border-radius: 8px; font-size: 12px; cursor: pointer; }

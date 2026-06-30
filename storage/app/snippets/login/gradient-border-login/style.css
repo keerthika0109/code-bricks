@@ -1,0 +1,9 @@
+:root { --g1: #06b6d4; --g2: #8b5cf6; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #0f172a; }
+.grad-border { padding: 3px; border-radius: 18px; background: conic-gradient(var(--g1), var(--g2), var(--g1)); animation: rotate-grad 4s linear infinite; }
+@keyframes rotate-grad { to { filter: hue-rotate(360deg); } }
+.grad-card { width: 320px; padding: 32px; background: #1e293b; border-radius: 16px; }
+.grad-card h2 { color: white; margin-bottom: 18px; }
+.grad-card input { width: 100%; padding: 11px; margin-bottom: 12px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: white; }
+.grad-card button { width: 100%; padding: 11px; background: linear-gradient(135deg, var(--g1), var(--g2)); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

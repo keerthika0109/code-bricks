@@ -1,0 +1,6 @@
+:root { --accent: #1f2937; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn6 { padding: 11px 22px; background: #dc2626; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-action-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; background: var(--accent); color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; }
+.nt-action-toast button { background: none; border: none; color: #93c5fd; font-weight: 700; cursor: pointer; }

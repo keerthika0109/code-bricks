@@ -1,0 +1,12 @@
+:root { --accent: #0284c7; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.sidebar-dp { display: flex; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); overflow: hidden; }
+.sdp-sidebar { display: flex; flex-direction: column; padding: 14px; border-right: 1px solid #f3f4f6; gap: 4px; }
+.sdp-sidebar button { padding: 7px 10px; border: none; background: none; text-align: left; font-size: 11px; border-radius: 6px; cursor: pointer; }
+.sdp-sidebar button.active { background: #eff6ff; color: var(--accent); font-weight: 600; }
+.sdp-cal { padding: 14px; }
+.cal-header { font-weight: 700; margin-bottom: 10px; font-size: 12px; }
+.sdp-grid { display: flex; gap: 6px; font-size: 11px; }
+.sdp-grid span { width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+.sdp-sel { background: var(--accent); color: white; }

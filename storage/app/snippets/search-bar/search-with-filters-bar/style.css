@@ -1,0 +1,7 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.filter-search { display: flex; width: 380px; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+.filter-search select { border: none; background: #f9fafb; padding: 0 10px; border-right: 1px solid #e5e7eb; font-size: 13px; }
+.filter-search input { flex: 1; border: none; outline: none; padding: 0 12px; }
+.filter-search button { background: var(--accent); color: white; border: none; padding: 0 18px; font-weight: 600; cursor: pointer; }

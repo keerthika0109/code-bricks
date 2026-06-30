@@ -1,0 +1,6 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.vdiv-row { display: flex; align-items: center; gap: 18px; text-align: center; }
+.vdiv-row strong { display: block; font-size: 18px; }
+.vdiv-row span { font-size: 11px; color: #9ca3af; }
+.vdiv-line { width: 1px; height: 30px; background: #e5e7eb; }

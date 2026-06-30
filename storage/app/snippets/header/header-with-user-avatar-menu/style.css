@@ -1,0 +1,10 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-avatar-wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-avatar-dropdown { position: relative; }
+.hd-avatar-btn { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: white; border: none; font-weight: 700; cursor: pointer; font-size: 12px; }
+.hd-avatar-menu { position: absolute; top: 130%; right: 0; background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); width: 130px; padding: 6px; }
+.hd-avatar-menu a { display: block; padding: 8px 10px; font-size: 13px; color: #4b5563; text-decoration: none; }
+.hd-avatar-menu a:hover { background: #fdf2f8; }

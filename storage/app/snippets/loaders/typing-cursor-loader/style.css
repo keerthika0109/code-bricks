@@ -1,0 +1,5 @@
+:root { --cursor-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: monospace; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #0f172a; color: #e5e7eb; }
+.blink-cursor-ld { color: var(--cursor-color); animation: blink-cur 0.8s infinite; margin-left: 4px; }
+@keyframes blink-cur { 50% { opacity: 0; } }

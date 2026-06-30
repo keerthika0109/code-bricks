@@ -1,0 +1,8 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.time-pick-cal { width: 280px; padding: 18px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cal-header { font-weight: 700; margin-bottom: 14px; font-size: 13px; }
+.time-slots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.ts-opt { padding: 9px; border: 1px solid #e5e7eb; border-radius: 8px; background: white; cursor: pointer; font-size: 12px; }
+.ts-opt.active { background: var(--accent); color: white; border-color: var(--accent); }

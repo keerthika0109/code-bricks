@@ -1,0 +1,6 @@
+:root { --btn-bg: #dc2626; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.shake-btn { padding: 14px 36px; font-size: 16px; font-weight: 600; color: white; background: var(--btn-bg); border: none; border-radius: 8px; cursor: pointer; }
+.shake-btn.shake { animation: shake-x 0.4s ease; }
+@keyframes shake-x { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-8px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-6px); } 80% { transform: translateX(6px); } }

@@ -1,0 +1,6 @@
+:root { --accent: #ea580c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.multitag-search { display: flex; align-items: center; gap: 6px; width: 320px; padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 8px; flex-wrap: wrap; }
+.mt-tag { background: var(--accent); color: white; font-size: 12px; padding: 4px 10px; border-radius: 14px; cursor: pointer; }
+.multitag-search input { border: none; outline: none; flex: 1; min-width: 100px; padding: 4px; }

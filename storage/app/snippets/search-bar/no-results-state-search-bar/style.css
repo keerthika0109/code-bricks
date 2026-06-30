@@ -1,0 +1,5 @@
+:root { --accent: #be123c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.noresult-search input { width: 280px; padding: 12px 16px; border: 1px solid #e5e7eb; border-radius: 8px; outline: none; }
+.noresult-msg { font-size: 13px; color: var(--accent); }

@@ -1,0 +1,7 @@
+:root { --accent: #0f766e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.widget-toggle-panel { width: 260px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.widget-toggle-panel h4 { margin-bottom: 12px; font-size: 13px; }
+.wtp-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 12px; color: #4b5563; }
+.wtp-row input { accent-color: var(--accent); }

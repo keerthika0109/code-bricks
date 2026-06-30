@@ -1,0 +1,6 @@
+:root { --accent: #475569; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.clear-dp { position: relative; display: flex; align-items: center; }
+#clearDpInput { padding: 10px 30px 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px; }
+#clearDpBtn { position: absolute; right: 8px; background: none; border: none; color: var(--accent); cursor: pointer; }

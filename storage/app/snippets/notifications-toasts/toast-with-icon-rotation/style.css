@@ -1,0 +1,7 @@
+:root { --accent: #d97706; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn15 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-rot-toast { position: fixed; bottom: 24px; right: 24px; background: var(--accent); color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+.nt-rot-icon { display: inline-block; animation: nt-rot-in 0.5s ease; }
+@keyframes nt-rot-in { from { transform: rotate(-180deg) scale(0); } to { transform: rotate(0) scale(1); } }

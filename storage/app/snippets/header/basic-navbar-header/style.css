@@ -1,0 +1,8 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-nav { display: flex; align-items: center; gap: 22px; }
+.hd-nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-cta { background: var(--accent); color: white; padding: 8px 16px; border-radius: 8px; }

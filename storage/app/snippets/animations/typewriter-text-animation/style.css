@@ -1,0 +1,6 @@
+:root { --text-color: #111827; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Courier New', monospace; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+h2 { color: var(--text-color); }
+.cursor { animation: blink 0.8s infinite; }
+@keyframes blink { 50% { opacity: 0; } }

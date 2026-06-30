@@ -1,0 +1,13 @@
+:root { --panel-bg: #4f46e5; --radius: 12px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.split-wrap { display: flex; min-height: 100vh; }
+.brand-panel { flex: 1; background: var(--panel-bg); color: white; display: flex; flex-direction: column; justify-content: center; padding: 60px; }
+.brand-panel h1 { font-size: 32px; margin-bottom: 14px; }
+.brand-panel p { opacity: 0.85; }
+.form-panel { flex: 1; display: flex; align-items: center; justify-content: center; background: #fff; }
+.form-panel form { width: 320px; }
+.form-panel h2 { margin-bottom: 20px; }
+.form-panel input { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #d1d5db; border-radius: var(--radius); }
+.form-panel button { width: 100%; padding: 12px; background: var(--panel-bg); color: white; border: none; border-radius: var(--radius); font-weight: 700; cursor: pointer; }
+@media (max-width: 700px) { .split-wrap { flex-direction: column; } .brand-panel { padding: 30px; } }

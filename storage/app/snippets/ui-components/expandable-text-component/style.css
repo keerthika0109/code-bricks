@@ -1,0 +1,6 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fff; padding: 20px; }
+.readmore-text { width: 280px; font-size: 13px; color: #4b5563; max-height: 40px; overflow: hidden; transition: max-height 0.3s ease; margin-bottom: 6px; }
+.readmore-text.expanded { max-height: 200px; }
+#readmoreBtn { background: none; border: none; color: var(--accent); font-weight: 600; cursor: pointer; font-size: 12px; padding: 0; }

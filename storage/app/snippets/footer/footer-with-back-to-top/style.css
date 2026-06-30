@@ -1,0 +1,6 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-totop-wrap { display: flex; justify-content: space-between; align-items: center; padding: 24px 30px; background: #f9fafb; }
+.ft-totop-wrap p { font-size: 12px; color: #9ca3af; }
+.ft-totop-btn { padding: 8px 16px; background: var(--accent); color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; }

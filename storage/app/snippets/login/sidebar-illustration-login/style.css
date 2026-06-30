@@ -1,0 +1,10 @@
+:root { --g1: #f97316; --g2: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.sidebar-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff7ed; gap: 0; }
+.sidebar-strip { width: 16px; height: 420px; background: linear-gradient(180deg, var(--g1), var(--g2)); border-radius: 8px 0 0 8px; }
+.sidebar-card { width: 320px; padding: 32px; background: white; border-radius: 0 12px 12px 0; box-shadow: 0 4px 14px rgba(0,0,0,0.08); height: 420px; box-sizing: border-box; }
+.sidebar-card h2 { margin-bottom: 6px; }
+.sub { color: #6b7280; font-size: 13px; margin-bottom: 20px; }
+.sidebar-card input { width: 100%; padding: 11px; margin-bottom: 12px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.sidebar-card button { width: 100%; padding: 11px; background: var(--g2); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

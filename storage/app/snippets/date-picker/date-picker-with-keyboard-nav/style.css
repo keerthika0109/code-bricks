@@ -1,0 +1,9 @@
+:root { --accent: #334155; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.kb-nav-dp { width: 280px; padding: 18px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cal-header { text-align: center; font-weight: 700; margin-bottom: 12px; }
+.kb-nav-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-size: 12px; text-align: center; outline: none; }
+.kb-nav-grid div { padding: 6px 0; border-radius: 4px; }
+.kb-nav-grid div.kb-focus { background: var(--accent); color: white; }
+.kb-nav-hint { font-size: 10px; color: #9ca3af; margin-top: 10px; text-align: center; }

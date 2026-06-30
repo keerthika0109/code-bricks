@@ -1,0 +1,5 @@
+:root { --icon-color: #475569; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background: linear-gradient(135deg,#e0e7ff,#fce7f3); font-family: system-ui, sans-serif; }
+.icon-only-btn { width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; color: var(--icon-color); background: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.8); border-radius: 50%; backdrop-filter: blur(8px); cursor: pointer; transition: transform 0.4s ease; }
+.icon-only-btn:hover { transform: rotate(90deg); }

@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.tooltip-trigger { position: relative; padding: 8px 14px; background: #f3f4f6; border-radius: 6px; cursor: default; font-size: 13px; }
+.tooltip-trigger::after { content: attr(data-tip); position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%); background: #111827; color: white; padding: 6px 10px; border-radius: 6px; font-size: 12px; white-space: nowrap; opacity: 0; transition: opacity 0.2s ease; pointer-events: none; }
+.tooltip-trigger:hover::after { opacity: 1; }

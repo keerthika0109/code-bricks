@@ -1,0 +1,13 @@
+:root { --light-status: #fbbf24; --dark-status: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.status-toggle-row { display: flex; align-items: center; gap: 8px; }
+.status-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--light-status); transition: background 0.3s ease; }
+.status-dot.dark-status { background: var(--dark-status); }
+.status-toggle { position: relative; width: 50px; height: 26px; }
+.status-toggle input { opacity: 0; }
+.status-slider { position: absolute; inset: 0; background: #d1d5db; border-radius: 26px; cursor: pointer; transition: 0.3s; }
+.status-slider::before { content: ''; position: absolute; width: 20px; height: 20px; left: 3px; top: 3px; background: white; border-radius: 50%; transition: 0.3s; }
+input:checked + .status-slider { background: #1e293b; }
+input:checked + .status-slider::before { transform: translateX(24px); }

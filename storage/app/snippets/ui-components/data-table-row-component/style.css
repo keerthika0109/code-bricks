@@ -1,0 +1,7 @@
+:root { --header-bg: #f9fafb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.ui-table { border-collapse: collapse; width: 360px; font-size: 13px; }
+.ui-table th { background: var(--header-bg); text-align: left; padding: 10px 12px; font-size: 11px; text-transform: uppercase; color: #6b7280; }
+.ui-table td { padding: 10px 12px; border-top: 1px solid #f3f4f6; }
+.t-badge { background: #eef2ff; color: #4338ca; padding: 2px 8px; border-radius: 12px; font-size: 11px; }

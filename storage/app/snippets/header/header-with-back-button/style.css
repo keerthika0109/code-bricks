@@ -1,0 +1,6 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-back-wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-back-btn { background: none; border: none; color: var(--accent); font-weight: 600; cursor: pointer; font-size: 14px; }
+.hd-back-wrap h2 { font-size: 16px; }

@@ -1,0 +1,5 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.sel-card { width: 260px; padding: 14px; text-align: left; border: 2px solid #e5e7eb; border-radius: 10px; background: white; cursor: pointer; font-size: 13px; font-weight: 600; }
+.sel-card.active { border-color: var(--accent); background: #f0fdf4; }

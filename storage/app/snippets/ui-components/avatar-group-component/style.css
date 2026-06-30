@@ -1,0 +1,7 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.avatar-group { display: flex; }
+.ag-circle { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; border: 2px solid white; margin-left: -12px; }
+.ag-circle:first-child { margin-left: 0; }
+.ag-circle.more { background: #e5e7eb; color: #6b7280; }

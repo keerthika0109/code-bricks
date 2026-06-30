@@ -1,0 +1,8 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.upload-card { width: 260px; padding: 40px 20px; border: 2px dashed #d1d5db; border-radius: 14px; text-align: center; transition: all 0.2s ease; cursor: pointer; }
+.upload-card.dragover { border-color: var(--accent); background: #eef2ff; }
+.upload-icon { font-size: 32px; margin-bottom: 10px; }
+.upload-card p { font-weight: 600; margin-bottom: 4px; }
+.upload-card span { font-size: 12px; color: #9ca3af; }

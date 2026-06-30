@@ -1,0 +1,6 @@
+:root { --accent: #1f2937; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; color: white; }
+.cycle-theme-btn { padding: 10px 20px; border: 1px solid #e5e7eb; border-radius: 8px; background: white; cursor: pointer; font-weight: 600; }
+body.dark .cycle-theme-btn { background: #1e293b; border-color: #334155; color: white; }

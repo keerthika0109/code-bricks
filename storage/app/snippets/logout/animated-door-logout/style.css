@@ -1,0 +1,10 @@
+:root { --door-color: #1e293b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; overflow: hidden; }
+.door-stage { position: relative; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+.door-panel { position: fixed; top: 0; height: 100%; width: 50%; background: var(--door-color); transition: transform 0.8s ease; z-index: 5; }
+.door-panel.left { left: 0; transform: translateX(-100%); }
+.door-panel.right { right: 0; transform: translateX(100%); }
+.door-stage.closing .door-panel.left { transform: translateX(0); }
+.door-stage.closing .door-panel.right { transform: translateX(0); }
+.door-btn { position: relative; z-index: 10; padding: 14px 32px; background: #dc2626; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

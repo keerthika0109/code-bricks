@@ -1,0 +1,9 @@
+:root { --accent: #38bdf8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.dark-cal { width: 300px; padding: 18px; background: #1e293b; border-radius: 14px; color: #e2e8f0; }
+.cal-header { text-align: center; font-weight: 700; margin-bottom: 12px; }
+.dark-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center; font-size: 12px; }
+.cal-dow { color: #64748b; font-weight: 600; }
+.dark-cal-grid span:not(.cal-dow) { padding: 6px 0; border-radius: 6px; }
+.dark-today { background: var(--accent); color: #0f172a; font-weight: 700; }

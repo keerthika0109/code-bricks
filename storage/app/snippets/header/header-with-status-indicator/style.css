@@ -1,0 +1,8 @@
+:root { --ok-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-status-wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: #111827; }
+.hd-status-wrap nav { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #6b7280; }
+.hd-status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok-color); }
+.hd-status-wrap nav a { text-decoration: none; color: #4b5563; margin-left: 16px; font-size: 14px; }

@@ -1,0 +1,8 @@
+:root { --accent: #4338ca; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-expand-wrap { text-align: center; padding: 26px; }
+.ft-expand-wrap nav, .ft-expand-extra { display: flex; justify-content: center; gap: 14px; margin-bottom: 10px; }
+.ft-expand-wrap nav a, .ft-expand-extra a { color: #6b7280; text-decoration: none; font-size: 12px; }
+#ftExpandBtn24 { background: none; border: none; color: var(--accent); font-size: 11px; cursor: pointer; margin-bottom: 14px; }
+.ft-expand-wrap p { font-size: 11px; color: #9ca3af; }

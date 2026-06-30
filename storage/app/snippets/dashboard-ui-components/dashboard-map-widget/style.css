@@ -1,0 +1,9 @@
+:root { --accent: #4338ca; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.geo-widget { width: 260px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.geo-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.geo-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 11px; }
+.geo-row span { width: 70px; }
+.geo-bar { flex: 1; height: 6px; background: #f3f4f6; border-radius: 4px; overflow: hidden; }
+.geo-bar div { height: 100%; background: var(--accent); }

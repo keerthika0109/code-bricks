@@ -1,0 +1,5 @@
+:root { --fill-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.inline-pct-track { width: 220px; height: 26px; background: #e5e7eb; border-radius: 14px; overflow: hidden; }
+.inline-pct-fill { height: 100%; width: 0%; background: var(--fill-color); color: white; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; transition: width 0.3s ease; white-space: nowrap; }

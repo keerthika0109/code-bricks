@@ -1,0 +1,7 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 150px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.mob-chip-row { display: flex; gap: 8px; overflow-x: auto; padding: 0 16px; }
+.mob-chip { flex-shrink: 0; padding: 8px 16px; border-radius: 20px; border: 1px solid #e5e7eb; background: white; font-size: 12px; cursor: pointer; }
+.mob-chip.active { background: var(--accent); color: white; border-color: var(--accent); }

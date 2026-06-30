@@ -1,0 +1,8 @@
+:root { --accent: #0284c7; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-faq-wrap { padding: 30px; background: #f0f9ff; text-align: center; }
+.ft-faq-wrap h4 { margin-bottom: 12px; }
+.ft-faq-wrap nav { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.ft-faq-wrap nav a { color: var(--accent); text-decoration: none; font-size: 13px; }
+.ft-faq-wrap p { font-size: 11px; color: #9ca3af; }

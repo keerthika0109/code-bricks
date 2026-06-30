@@ -1,0 +1,8 @@
+:root { --saved-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.autosave-form { width: 300px; padding: 22px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.autosave-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.autosave-header h3 { font-size: 15px; }
+.autosave-status { font-size: 11px; color: var(--saved-color); font-weight: 600; }
+.autosave-form textarea { width: 100%; height: 120px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; resize: none; font-family: inherit; }

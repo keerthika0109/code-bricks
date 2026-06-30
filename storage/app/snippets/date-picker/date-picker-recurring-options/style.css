@@ -1,0 +1,6 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.recur-dp { display: flex; gap: 8px; }
+.recur-dp input, .recur-dp select { padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; }
+.recur-dp select:focus, .recur-dp input:focus { border-color: var(--accent); outline: none; }

@@ -1,0 +1,11 @@
+:root { --accent: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen6 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.pp-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; }
+.wheel-pp-box { width: 280px; padding: 28px; background: white; border-radius: 16px; text-align: center; }
+.wheel-pp-box h3 { margin-bottom: 16px; }
+.wheel-pp-circle { font-size: 60px; margin-bottom: 18px; transition: transform 2s ease; }
+.wheel-pp-circle.spun { transform: rotate(1080deg); }
+#ppSpinBtn6 { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-bottom: 8px; }
+.wheel-pp-skip { background: none; border: none; color: #9ca3af; font-size: 12px; cursor: pointer; }

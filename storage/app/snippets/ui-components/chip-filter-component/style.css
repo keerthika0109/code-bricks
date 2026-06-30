@@ -1,0 +1,6 @@
+:root { --accent: #0f766e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.chip-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-chip { display: flex; align-items: center; gap: 6px; background: #f0fdfa; color: var(--accent); padding: 6px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.filter-chip button { background: none; border: none; color: var(--accent); cursor: pointer; }

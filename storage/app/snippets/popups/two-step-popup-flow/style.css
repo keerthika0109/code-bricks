@@ -1,0 +1,10 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen19 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.pp-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.twostep-pp-box { width: 290px; padding: 28px; background: white; border-radius: 14px; text-align: center; }
+.twostep-pp-box h3 { margin-bottom: 16px; }
+.twostep-opt { width: 100%; padding: 11px; margin-bottom: 8px; border: 1px solid var(--accent); background: white; color: var(--accent); border-radius: 8px; cursor: pointer; font-weight: 600; }
+.twostep-pp-box input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.twostep-pp-box button:not(.twostep-opt) { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

@@ -1,0 +1,12 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-tier-cta { background: var(--accent); color: white; text-align: center; padding: 30px; }
+.ft-tier-cta h3 { margin-bottom: 12px; }
+.ft-tier-cta button { padding: 10px 22px; background: white; color: var(--accent); border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.ft-tier-cols { display: flex; gap: 40px; padding: 24px 30px; background: #111827; }
+.ft-tier-cols h4 { color: white; font-size: 12px; margin-bottom: 8px; }
+.ft-tier-cols a { display: block; color: #9ca3af; text-decoration: none; font-size: 12px; padding: 3px 0; }
+.ft-tier-bottom { display: flex; justify-content: space-between; padding: 14px 30px; background: #0d1117; color: #6b7280; font-size: 11px; }
+.ft-tier-bottom nav { display: flex; gap: 10px; }
+.ft-tier-bottom nav a { color: #6b7280; text-decoration: none; }

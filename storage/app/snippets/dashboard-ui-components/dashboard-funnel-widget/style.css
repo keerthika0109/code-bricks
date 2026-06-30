@@ -1,0 +1,8 @@
+:root { --accent: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.funnel-widget { width: 260px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.funnel-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.funnel-bar { background: var(--accent); color: white; padding: 8px 12px; margin: 0 auto 6px; border-radius: 6px; font-size: 11px; opacity: 0.7; }
+.funnel-bar:nth-child(2) { opacity: 0.85; }
+.funnel-bar:nth-child(3) { opacity: 1; }

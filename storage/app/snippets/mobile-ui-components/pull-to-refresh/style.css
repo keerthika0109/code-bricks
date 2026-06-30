@@ -1,0 +1,9 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.mob-screen-tall { padding: 20px; text-align: center; }
+.refresh-indicator { width: 30px; height: 30px; margin: 0 auto 10px; color: var(--accent); font-size: 20px; transition: transform 0.3s ease; }
+.refresh-indicator.spinning { animation: spin-refresh 0.6s linear infinite; }
+@keyframes spin-refresh { to { transform: rotate(360deg); } }
+#refreshTrigger { padding: 8px 16px; border: 1px solid #e5e7eb; border-radius: 6px; background: white; cursor: pointer; font-size: 12px; margin-bottom: 14px; }

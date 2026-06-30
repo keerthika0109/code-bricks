@@ -1,0 +1,9 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; color: white; }
+.theme-cards { display: flex; gap: 12px; }
+.theme-card-opt { width: 90px; padding: 16px 8px; border: 2px solid #e5e7eb; border-radius: 12px; background: white; cursor: pointer; font-size: 13px; font-weight: 600; }
+.theme-card-opt.active { border-color: var(--accent); }
+body.dark .theme-card-opt { background: #1e293b; color: white; border-color: #334155; }
+body.dark .theme-card-opt.active { border-color: var(--accent); }

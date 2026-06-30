@@ -1,0 +1,6 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn16 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-countdown-toast { position: fixed; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 10px; background: #1f2937; color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; }
+.nt-countdown-toast button { background: none; border: none; color: #93c5fd; font-weight: 700; cursor: pointer; }

@@ -1,0 +1,10 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen15 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.pp-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.loyalty-pp-box { width: 280px; padding: 28px; background: white; border-radius: 16px; text-align: center; }
+.loyalty-pp-icon { font-size: 36px; }
+.loyalty-pp-box h3 { margin: 10px 0 4px; color: var(--accent); }
+.loyalty-pp-box p { font-size: 13px; color: #6b7280; margin-bottom: 18px; }
+.loyalty-pp-box button { padding: 11px 28px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

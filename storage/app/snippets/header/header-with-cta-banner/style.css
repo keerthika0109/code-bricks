@@ -1,0 +1,7 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-promo-strip { background: var(--accent); color: white; text-align: center; padding: 8px; font-size: 12px; font-weight: 600; }
+.hd-banner-nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-banner-nav nav a { text-decoration: none; color: #4b5563; margin-left: 18px; font-size: 14px; }

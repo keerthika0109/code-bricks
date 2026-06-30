@@ -1,0 +1,6 @@
+:root { --accent: #000000; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.underline-search { display: flex; align-items: center; gap: 10px; width: 280px; border-bottom: 2px solid #e5e7eb; padding: 10px 0; color: #9ca3af; }
+.underline-search input { border: none; outline: none; flex: 1; font-size: 15px; }
+.underline-search:has(input:focus) { border-bottom-color: var(--accent); }

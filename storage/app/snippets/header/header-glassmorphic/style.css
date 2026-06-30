@@ -1,0 +1,6 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-glass-page { background: linear-gradient(135deg, #667eea, #764ba2); min-height: 100px; }
+.hd-glass-wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; background: rgba(255,255,255,0.15); border-bottom: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); }
+.hd-logo { font-weight: 800; color: white; }
+.hd-glass-wrap nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }

@@ -1,0 +1,8 @@
+:root { --primary-color: #000000; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.mag-layout { display: flex; align-items: center; gap: 60px; max-width: 700px; padding: 20px; }
+.mag-layout h1 { font-size: 72px; font-weight: 900; line-height: 0.95; letter-spacing: -2px; }
+.mag-form input { display: block; width: 240px; padding: 12px 0; margin-bottom: 16px; border: none; border-bottom: 2px solid #000; font-family: Georgia, serif; letter-spacing: 1px; outline: none; }
+.mag-form button { background: var(--primary-color); color: white; border: none; padding: 12px 28px; font-family: Georgia, serif; letter-spacing: 1px; cursor: pointer; }
+@media (max-width: 600px) { .mag-layout { flex-direction: column; gap: 24px; text-align: center; } }

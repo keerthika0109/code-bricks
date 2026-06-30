@@ -1,0 +1,9 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.mini-cal { width: 220px; padding: 12px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; }
+.mini-cal-header { display: flex; justify-content: space-between; align-items: center; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+.mini-cal-header button { border: none; background: none; cursor: pointer; font-size: 14px; }
+.mini-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; font-size: 10px; text-align: center; }
+.mini-cal-grid span { padding: 4px 0; }
+.mini-today { background: var(--accent); color: white; border-radius: 4px; font-weight: 700; }

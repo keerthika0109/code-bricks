@@ -1,0 +1,8 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #faf5ff; }
+.alloc-form { width: 300px; padding: 24px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.alloc-form h3 { margin-bottom: 16px; font-size: 15px; }
+.alloc-row { margin-bottom: 16px; }
+.alloc-row label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px; }
+.alloc-row input { width: 100%; accent-color: var(--accent); }

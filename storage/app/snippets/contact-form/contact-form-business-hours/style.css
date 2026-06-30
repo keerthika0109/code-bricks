@@ -1,0 +1,12 @@
+:root { --accent: #4338ca; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cf-hours-box { display: flex; gap: 20px; background: white; padding: 24px; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cf-hours-box form { width: 220px; }
+.cf-hours-box h2 { margin-bottom: 14px; }
+.cf-hours-box input, .cf-hours-box textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-family: inherit; }
+.cf-hours-box textarea { height: 60px; resize: none; }
+.cf-hours-box button { width: 100%; padding: 10px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.cf-hours-panel { border-left: 1px solid #f3f4f6; padding-left: 18px; width: 110px; }
+.cf-hours-panel h4 { font-size: 12px; margin-bottom: 8px; color: var(--accent); }
+.cf-hours-panel p { font-size: 11px; color: #6b7280; padding: 3px 0; }

@@ -1,0 +1,9 @@
+:root { --accent: #475569; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-crumb-main { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-crumb-main nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-crumb-row { padding: 8px 30px; background: #f9fafb; font-size: 12px; color: #9ca3af; }
+.hd-crumb-row a { color: var(--accent); text-decoration: none; }
+.hd-crumb-row span { color: #111827; font-weight: 600; }

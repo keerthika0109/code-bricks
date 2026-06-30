@@ -1,0 +1,12 @@
+:root { --online-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.team-widget { width: 260px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.team-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.team-member { display: flex; align-items: center; gap: 10px; padding: 8px 0; }
+.tm-avatar { width: 32px; height: 32px; background: #6366f1; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; }
+.team-member strong { display: block; font-size: 12px; }
+.team-member span { font-size: 10px; color: #9ca3af; }
+.tm-online, .tm-offline { width: 8px; height: 8px; border-radius: 50%; margin-left: auto; }
+.tm-online { background: var(--online-color); }
+.tm-offline { background: #d1d5db; }

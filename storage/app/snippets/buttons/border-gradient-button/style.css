@@ -1,0 +1,4 @@
+:root { --g1: #06b6d4; --g2: #8b5cf6; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#0f172a; font-family: system-ui, sans-serif; }
+.grad-border-btn { padding: 14px 36px; font-size: 16px; font-weight: 700; color: white; background: #0f172a; border: 3px solid transparent; border-radius: 10px; background-image: linear-gradient(#0f172a, #0f172a), linear-gradient(135deg, var(--g1), var(--g2)); background-origin: border-box; background-clip: padding-box, border-box; cursor: pointer; }

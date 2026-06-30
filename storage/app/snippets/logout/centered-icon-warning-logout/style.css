@@ -1,0 +1,10 @@
+:root { --warn: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fffbeb; }
+.wi-card { width: 320px; padding: 32px; background: white; border-radius: 14px; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.wi-icon { font-size: 40px; margin-bottom: 12px; }
+.wi-card h2 { margin-bottom: 8px; }
+.wi-card p { font-size: 13px; color: #6b7280; margin-bottom: 20px; }
+.wi-card button { width: 100%; padding: 11px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-bottom: 8px; }
+.wi-confirm { background: var(--warn); color: white; }
+.wi-cancel { background: #f3f4f6; color: #374151; }

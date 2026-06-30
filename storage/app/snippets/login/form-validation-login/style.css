@@ -1,0 +1,10 @@
+:root { --primary-color: #be123c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff1f2; }
+.valid-card { width: 320px; padding: 32px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.valid-card h2 { margin-bottom: 18px; }
+.valid-card input { width: 100%; padding: 11px; margin-bottom: 6px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.valid-card input.invalid { border-color: #dc2626; }
+.valid-card input.valid { border-color: #16a34a; }
+.error { color: #dc2626; font-size: 12px; margin-bottom: 10px; }
+.valid-card button { width: 100%; padding: 11px; background: var(--primary-color); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-top: 8px; }

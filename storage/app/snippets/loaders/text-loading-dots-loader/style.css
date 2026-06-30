@@ -1,0 +1,4 @@
+:root { --text-color: #374151; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.text-ld { font-size: 20px; font-weight: 600; color: var(--text-color); }

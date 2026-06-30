@@ -1,0 +1,6 @@
+:root { --accent: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn22 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-rate-toast { position: fixed; bottom: 24px; right: 24px; background: white; border: 1px solid #e5e7eb; padding: 14px 18px; border-radius: 10px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); text-align: center; }
+.nt-rate-stars { color: var(--accent); font-size: 18px; margin-top: 6px; cursor: pointer; }

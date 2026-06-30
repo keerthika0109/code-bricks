@@ -1,0 +1,5 @@
+:root { --btn-bg: #6366f1; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.countdown-btn { padding: 12px 28px; font-size: 15px; font-weight: 600; color: white; background: var(--btn-bg); border: none; border-radius: 8px; cursor: pointer; min-width: 150px; }
+.countdown-btn:disabled { background: #c7d2fe; cursor: not-allowed; }

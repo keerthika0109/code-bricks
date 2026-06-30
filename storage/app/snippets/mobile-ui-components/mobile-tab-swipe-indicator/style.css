@@ -1,0 +1,9 @@
+:root { --accent: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 220px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.mob-screen { height: 100%; }
+.swipe-page-content { font-size: 14px; color: #6b7280; }
+.swipe-page-dots { display: flex; gap: 6px; }
+.swipe-page-dots span { width: 7px; height: 7px; border-radius: 50%; background: #e5e7eb; }
+.swipe-page-dots span.active { background: var(--accent); }

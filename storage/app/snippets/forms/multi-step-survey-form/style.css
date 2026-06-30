@@ -1,0 +1,13 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #faf5ff; }
+.multi-form { width: 300px; padding: 28px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.multi-progress { display: flex; gap: 6px; margin-bottom: 20px; }
+.multi-progress .step { flex: 1; height: 4px; background: #e5e7eb; border-radius: 4px; }
+.multi-progress .step.active { background: var(--accent); }
+.multi-page h3 { margin-bottom: 12px; font-size: 15px; }
+.multi-page input { width: 100%; padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.multi-nav { display: flex; justify-content: space-between; margin-top: 18px; }
+.multi-nav button { padding: 9px 18px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+#multiNext { background: var(--accent); color: white; margin-left: auto; }
+#multiBack { background: #f3f4f6; }

@@ -1,0 +1,10 @@
+:root { --day-color: #60a5fa; --night-color: #312e81; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.sky-toggle { position: relative; width: 60px; height: 30px; }
+.sky-toggle input { opacity: 0; }
+.sky-slider { position: absolute; inset: 0; background: var(--day-color); border-radius: 30px; cursor: pointer; transition: background 0.4s ease; }
+.sky-knob { position: absolute; left: 3px; top: 3px; width: 24px; height: 24px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; transition: transform 0.4s ease; }
+input:checked + .sky-slider { background: var(--night-color); }
+input:checked + .sky-slider .sky-knob { transform: translateX(28px); }

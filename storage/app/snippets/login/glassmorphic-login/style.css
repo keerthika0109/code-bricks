@@ -1,0 +1,11 @@
+:root { --primary-color: #6366f1; --bg-start: #667eea; --bg-end: #764ba2; --radius: 20px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--bg-start), var(--bg-end)); }
+.glass-card { width: 360px; padding: 40px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); border-radius: var(--radius); backdrop-filter: blur(16px); color: white; }
+.glass-card h2 { margin-bottom: 24px; text-align: center; }
+.glass-card label { display: block; font-size: 13px; margin: 14px 0 6px; opacity: 0.9; }
+.glass-card input { width: 100%; padding: 12px 14px; border: none; border-radius: 10px; background: rgba(255,255,255,0.2); color: white; outline: none; }
+.glass-card input::placeholder { color: rgba(255,255,255,0.6); }
+.glass-card button { width: 100%; margin-top: 22px; padding: 13px; border: none; border-radius: 10px; background: var(--primary-color); color: white; font-weight: 700; cursor: pointer; }
+.alt { margin-top: 16px; font-size: 13px; text-align: center; opacity: 0.85; }
+.alt a { color: white; font-weight: 600; }

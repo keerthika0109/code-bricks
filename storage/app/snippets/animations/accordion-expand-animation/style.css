@@ -1,0 +1,7 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #fff; margin: 0; }
+.acc-item { width: 320px; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+.acc-header { width: 100%; padding: 14px 16px; background: #f9fafb; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; color: var(--accent); }
+.acc-body { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; padding: 0 16px; }
+.acc-body p { padding: 14px 0; font-size: 14px; color: #4b5563; }

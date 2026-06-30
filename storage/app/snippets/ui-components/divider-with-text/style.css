@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.text-divider { display: flex; align-items: center; width: 280px; text-align: center; color: #9ca3af; font-size: 11px; font-weight: 600; }
+.text-divider::before, .text-divider::after { content: ''; flex: 1; border-bottom: 1px solid #e5e7eb; }
+.text-divider span { padding: 0 10px; }

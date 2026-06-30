@@ -1,0 +1,6 @@
+:root { --num-color: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.counter-box { text-align: center; }
+.counter-num { font-size: 56px; font-weight: 800; color: var(--num-color); }
+.counter-box p { color: #6b7280; }

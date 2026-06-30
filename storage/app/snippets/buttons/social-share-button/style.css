@@ -1,0 +1,8 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.share-group { display: flex; align-items: center; gap: 8px; }
+.share-toggle { padding: 12px 28px; font-size: 15px; font-weight: 600; color: white; background: var(--accent); border: none; border-radius: 8px; cursor: pointer; }
+.share-icons { display: flex; gap: 6px; max-width: 0; overflow: hidden; transition: max-width 0.4s ease; }
+.share-group.open .share-icons { max-width: 200px; }
+.icon-btn { width: 36px; height: 36px; border-radius: 50%; border: 1px solid #e5e7eb; background: #f9fafb; cursor: pointer; font-weight: 700; }

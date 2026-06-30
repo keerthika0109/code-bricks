@@ -1,0 +1,9 @@
+:root { --warn-color: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.api-usage-widget { width: 260px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.api-usage-widget h4 { margin-bottom: 12px; font-size: 13px; }
+.api-bar { height: 8px; background: #f3f4f6; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+.api-bar div { height: 100%; background: var(--warn-color); }
+.api-usage-widget p { font-size: 12px; color: #4b5563; margin-bottom: 6px; }
+.api-warn { font-size: 11px; color: var(--warn-color); font-weight: 600; }

@@ -1,0 +1,5 @@
+:root { --btn-bg: #fb7185; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fef2f2; font-family: system-ui, sans-serif; }
+.long-shadow-btn { padding: 14px 36px; font-size: 16px; font-weight: 700; color: white; background: var(--btn-bg); border: none; border-radius: 6px; cursor: pointer; text-shadow: 1px 1px var(--btn-bg), 2px 2px var(--btn-bg), 3px 3px var(--btn-bg), 4px 4px #fca5a5, 5px 5px #fca5a5, 6px 6px #fca5a5; transition: transform 0.2s ease; }
+.long-shadow-btn:hover { transform: translate(-2px, -2px); }

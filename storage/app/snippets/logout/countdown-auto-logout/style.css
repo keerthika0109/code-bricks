@@ -1,0 +1,8 @@
+:root { --warn: #d97706; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fffbeb; }
+.ct-card { width: 320px; padding: 32px; background: white; border: 2px solid var(--warn); border-radius: 12px; text-align: center; }
+.ct-card h2 { color: var(--warn); margin-bottom: 10px; }
+.ct-card p { font-size: 14px; color: #4b5563; margin-bottom: 20px; }
+#ctSeconds { font-weight: 700; color: var(--warn); }
+.ct-card button { width: 100%; padding: 11px; background: var(--warn); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

@@ -1,0 +1,10 @@
+:root { --g1: #6366f1; --g2: #ec4899; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-cta-band { background: linear-gradient(135deg, var(--g1), var(--g2)); color: white; text-align: center; padding: 36px 20px; }
+.ft-cta-band h3 { margin-bottom: 14px; }
+.ft-cta-band button { padding: 11px 26px; background: white; color: var(--g1); border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.ft-cta-cols { display: flex; gap: 40px; padding: 24px 30px; }
+.ft-cta-cols h4 { font-size: 12px; margin-bottom: 8px; }
+.ft-cta-cols a { display: block; color: #6b7280; text-decoration: none; font-size: 12px; padding: 3px 0; }
+.ft-cta-wrap p { font-size: 11px; color: #9ca3af; padding: 0 30px 16px; }

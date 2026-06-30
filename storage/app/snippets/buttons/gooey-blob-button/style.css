@@ -1,0 +1,5 @@
+:root { --btn-bg: #f59e0b; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#1e293b; font-family: system-ui, sans-serif; }
+.blob-btn { padding: 18px 42px; font-size: 16px; font-weight: 700; color: #1e293b; background: var(--btn-bg); border: none; border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%; cursor: pointer; transition: border-radius 0.4s ease, transform 0.3s ease; }
+.blob-btn:hover { border-radius: 58% 42% 35% 65% / 55% 55% 45% 45%; transform: scale(1.05); }

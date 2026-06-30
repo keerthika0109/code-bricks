@@ -1,0 +1,9 @@
+:root { --accent: #4338ca; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-marquee-bar { background: var(--accent); color: white; overflow: hidden; padding: 6px 0; }
+.hd-marquee-text { white-space: nowrap; font-size: 11px; animation: hd-marquee-scroll 12s linear infinite; display: inline-block; }
+@keyframes hd-marquee-scroll { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
+.hd-marquee-nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-marquee-nav nav a { text-decoration: none; color: #4b5563; font-size: 14px; }

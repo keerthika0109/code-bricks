@@ -1,0 +1,6 @@
+:root { --box-color: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; }
+.an-box { padding: 30px 50px; background: var(--box-color); color: white; border-radius: 12px; font-weight: 700; font-size: 18px; }
+.fade-up { animation: fadeInUp 0.8s ease forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }

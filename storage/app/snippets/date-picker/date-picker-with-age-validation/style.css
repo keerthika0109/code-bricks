@@ -1,0 +1,6 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.age-dp label { display: block; font-size: 13px; color: #4b5563; margin-bottom: 6px; font-weight: 600; }
+.age-dp input { padding: 10px 14px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.age-result { margin-top: 8px; font-size: 13px; color: var(--accent); font-weight: 600; }

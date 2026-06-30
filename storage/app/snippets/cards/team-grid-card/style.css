@@ -1,0 +1,9 @@
+:root { --accent: #be185d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.team-card { width: 260px; padding: 22px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.team-card h3 { margin-bottom: 14px; font-size: 15px; }
+.team-avatars { display: flex; }
+.team-av { width: 38px; height: 38px; border-radius: 50%; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; border: 2px solid white; margin-left: -10px; }
+.team-av:first-child { margin-left: 0; }
+.team-av.more { background: #e5e7eb; color: #6b7280; }

@@ -1,0 +1,6 @@
+:root { --btn-bg: #8b5cf6; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f8fafc; font-family: system-ui, sans-serif; }
+.load-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 36px; font-size: 16px; font-weight: 600; color: white; background: var(--btn-bg); border: none; border-radius: 8px; cursor: pointer; min-width: 140px; }
+.spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.4); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }

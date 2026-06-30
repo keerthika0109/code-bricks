@@ -1,0 +1,8 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.voice-search { display: flex; align-items: center; width: 300px; border: 1px solid #e5e7eb; border-radius: 30px; padding: 4px 4px 4px 16px; }
+.voice-search input { flex: 1; border: none; outline: none; }
+.voice-search button { width: 38px; height: 38px; border-radius: 50%; border: none; background: #fef2f2; cursor: pointer; font-size: 16px; }
+.voice-search button.listening { background: var(--accent); animation: mic-listen 1s infinite; }
+@keyframes mic-listen { 0%, 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.4); } 50% { box-shadow: 0 0 0 8px rgba(220,38,38,0); } }

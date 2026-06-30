@@ -1,0 +1,5 @@
+:root { --bg-fill: #f1f5f9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.flat-search { display: flex; align-items: center; gap: 8px; width: 260px; padding: 11px 16px; background: var(--bg-fill); border-radius: 8px; color: #94a3b8; }
+.flat-search input { background: none; border: none; outline: none; flex: 1; }

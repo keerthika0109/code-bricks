@@ -1,0 +1,8 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 380px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; position: relative; }
+.mob-screen { padding: 20px; height: calc(100% - 70px); display: flex; align-items: center; justify-content: center; color: #9ca3af; }
+.sticky-cart-bar { position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; background: white; border-top: 1px solid #e5e7eb; }
+.sticky-cart-bar span { font-weight: 700; font-size: 16px; }
+.sticky-cart-bar button { padding: 10px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

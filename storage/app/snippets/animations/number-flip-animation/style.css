@@ -1,0 +1,6 @@
+:root { --digit-bg: #1e293b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: #fff; }
+.flip-digit { width: 60px; height: 80px; background: var(--digit-bg); color: white; font-size: 36px; font-weight: 800; display: flex; align-items: center; justify-content: center; border-radius: 8px; transition: transform 0.3s ease; }
+.flip-digit.flipping { transform: rotateX(360deg); }
+#flipBtn { padding: 10px 20px; border: none; border-radius: 6px; background: #e5e7eb; cursor: pointer; }

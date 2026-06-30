@@ -1,0 +1,8 @@
+:root { --accent: #ea580c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: #fff; }
+.csd-display { width: 100px; padding: 16px; background: var(--accent); color: white; border-radius: 12px; text-align: center; }
+.csd-day { display: block; font-size: 28px; font-weight: 800; }
+.csd-month { display: block; font-size: 11px; letter-spacing: 1px; }
+.csd-year { font-size: 10px; opacity: 0.8; }
+#cardStyleInput { padding: 8px; border: 1px solid #e5e7eb; border-radius: 6px; }

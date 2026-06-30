@@ -1,0 +1,8 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.files-widget { width: 280px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.files-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.file-row { display: flex; gap: 10px; padding: 8px 0; border-top: 1px solid #f3f4f6; }
+.file-icon { font-size: 18px; }
+.file-row strong { display: block; font-size: 12px; }
+.file-row span { font-size: 10px; color: #9ca3af; }

@@ -1,0 +1,7 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn27 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-emoji-toast { position: fixed; bottom: 24px; right: 24px; background: white; border: 1px solid #e5e7eb; padding: 12px 16px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); font-size: 12px; }
+.nt-emoji-opts { display: flex; gap: 6px; margin-top: 8px; }
+.nt-emoji-opts button { background: #f9fafb; border: none; border-radius: 6px; padding: 4px 8px; cursor: pointer; font-size: 16px; }

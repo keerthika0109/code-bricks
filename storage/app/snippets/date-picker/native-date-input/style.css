@@ -1,0 +1,6 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; background: #fff; }
+.dp-label { font-size: 13px; color: #4b5563; font-weight: 600; }
+.native-date-input { padding: 11px 14px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; outline: none; }
+.native-date-input:focus { border-color: var(--accent); }

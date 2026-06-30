@@ -1,0 +1,8 @@
+:root { --accent: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.quarter-cal { display: flex; gap: 14px; }
+.q-month { width: 100px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 10px; text-align: center; }
+.q-month strong { display: block; font-size: 12px; margin-bottom: 8px; }
+.q-grid { display: flex; gap: 4px; justify-content: center; font-size: 11px; }
+.q-today { background: var(--accent); color: white; border-radius: 4px; padding: 0 4px; }

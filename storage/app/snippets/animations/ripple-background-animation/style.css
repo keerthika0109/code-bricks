@@ -1,0 +1,9 @@
+:root { --ping-color: #22c55e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #0f172a; }
+.ping-center { position: relative; width: 20px; height: 20px; }
+.ping-dot { position: absolute; inset: 0; background: var(--ping-color); border-radius: 50%; }
+.ping-ring { position: absolute; inset: 0; border: 2px solid var(--ping-color); border-radius: 50%; animation: ping-out 2s ease-out infinite; }
+.delay1 { animation-delay: 0.6s; }
+.delay2 { animation-delay: 1.2s; }
+@keyframes ping-out { to { transform: scale(8); opacity: 0; } }

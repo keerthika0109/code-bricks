@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.spark-card { width: 160px; padding: 16px; background: white; border: 1px solid #e5e7eb; border-radius: 12px; }
+.spark-card span { font-size: 11px; color: #9ca3af; }
+.spark-card h3 { font-size: 20px; margin: 4px 0 8px; }

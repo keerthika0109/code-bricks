@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen30 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.pp-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; }
+.simple-pp-box { width: 240px; padding: 22px; background: white; border-radius: 10px; text-align: center; }
+.simple-pp-box p { font-size: 13px; margin-bottom: 16px; }
+.simple-pp-box button { padding: 8px 24px; background: #111827; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }

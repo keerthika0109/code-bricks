@@ -1,0 +1,6 @@
+:root { --accent: #38bdf8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.dark-search { display: flex; align-items: center; gap: 10px; width: 280px; padding: 11px 16px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; color: #64748b; }
+.dark-search input { background: none; border: none; outline: none; color: #e2e8f0; flex: 1; }
+.dark-search:has(input:focus) { box-shadow: 0 0 0 2px var(--accent); border-color: var(--accent); }

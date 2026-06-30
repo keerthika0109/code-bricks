@@ -1,0 +1,5 @@
+:root { --accent: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+.bright-slider-wrap { display: flex; align-items: center; gap: 10px; }
+.bright-slider-wrap input { accent-color: var(--accent); width: 140px; }

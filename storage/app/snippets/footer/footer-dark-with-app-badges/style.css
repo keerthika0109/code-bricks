@@ -1,0 +1,10 @@
+:root { --bg-color: #1e1b4b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-app-wrap { background: var(--bg-color); color: #c7d2fe; padding: 40px 30px 20px; }
+.ft-app-cols { display: flex; gap: 50px; margin-bottom: 24px; }
+.ft-app-cols h4 { color: white; font-size: 13px; margin-bottom: 12px; }
+.ft-app-badges { display: flex; flex-direction: column; gap: 8px; }
+.ft-app-badges span { background: #312e81; padding: 8px 14px; border-radius: 6px; font-size: 12px; width: fit-content; }
+.ft-app-cols a { display: block; color: #c7d2fe; text-decoration: none; font-size: 13px; padding: 4px 0; }
+.ft-app-bottom { border-top: 1px solid #312e81; padding-top: 16px; font-size: 12px; }

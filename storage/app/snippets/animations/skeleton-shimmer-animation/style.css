@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.skel-line { height: 16px; border-radius: 6px; background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%); background-size: 200% 100%; animation: shimmer-skel 1.5s infinite; }
+.w-60 { width: 220px; }
+.w-90 { width: 320px; }
+.w-40 { width: 150px; }
+@keyframes shimmer-skel { to { background-position: -200% 0; } }

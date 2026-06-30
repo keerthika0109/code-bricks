@@ -1,0 +1,11 @@
+:root { --star-color: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #f3f4f6; }
+.mob-screen { display: flex; height: 100%; }
+.rate-sheet { width: 100%; background: white; border-radius: 16px 16px 0 0; padding: 24px; text-align: center; }
+.rate-sheet h3 { margin-bottom: 14px; font-size: 15px; }
+.rate-sheet-stars { font-size: 24px; color: #d1d5db; margin-bottom: 18px; }
+.rate-sheet-stars span:nth-child(-n+4) { color: var(--star-color); }
+.rate-sheet-btn { width: 100%; padding: 12px; background: var(--star-color); color: white; border: none; border-radius: 8px; font-weight: 700; margin-bottom: 8px; cursor: pointer; }
+.rate-sheet-skip { background: none; border: none; color: #9ca3af; font-size: 12px; cursor: pointer; }

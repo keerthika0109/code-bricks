@@ -1,0 +1,7 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.notif-summary-widget { display: flex; gap: 14px; background: white; padding: 16px; border-radius: 14px; border: 1px solid #e5e7eb; }
+.ns-item { text-align: center; }
+.ns-count { display: block; width: 32px; height: 32px; line-height: 32px; background: var(--accent); color: white; border-radius: 50%; font-weight: 700; font-size: 13px; margin: 0 auto 4px; }
+.ns-item span { font-size: 10px; color: #6b7280; }

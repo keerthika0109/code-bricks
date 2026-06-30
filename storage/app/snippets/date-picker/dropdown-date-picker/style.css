@@ -1,0 +1,9 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.dp-wrap { position: relative; }
+#ddDateInput { width: 200px; padding: 11px 14px; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; }
+.dd-cal-popup { position: absolute; top: 105%; left: 0; background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+.dd-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-size: 11px; text-align: center; }
+.dd-cal-grid div { padding: 6px; cursor: pointer; border-radius: 4px; }
+.dd-cal-grid div:hover { background: var(--accent); color: white; }

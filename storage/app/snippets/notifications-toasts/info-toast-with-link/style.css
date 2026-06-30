@@ -1,0 +1,6 @@
+:root { --info-color: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn9 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-info-toast { position: fixed; bottom: 24px; right: 24px; background: var(--info-color); color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; }
+.nt-info-toast a { color: white; text-decoration: underline; font-weight: 700; margin-left: 4px; }

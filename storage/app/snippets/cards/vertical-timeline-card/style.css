@@ -1,0 +1,11 @@
+:root { --done-color: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.tl-card { width: 280px; padding: 22px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.tl-card h3 { margin-bottom: 16px; font-size: 15px; }
+.tl-item { position: relative; padding-left: 22px; padding-bottom: 18px; border-left: 2px solid #e5e7eb; margin-left: 5px; }
+.tl-item:last-child { border-color: transparent; }
+.tl-dot { position: absolute; left: -7px; top: 0; width: 12px; height: 12px; border-radius: 50%; background: #d1d5db; }
+.tl-item.done .tl-dot { background: var(--done-color); }
+.tl-item strong { font-size: 13px; display: block; }
+.tl-item p { font-size: 11px; color: #9ca3af; }

@@ -1,0 +1,8 @@
+:root { --gold: #d97706; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn24 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-achieve-toast { position: fixed; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 12px; background: linear-gradient(135deg, #fbbf24, var(--gold)); color: white; padding: 14px 20px; border-radius: 10px; max-width: 260px; }
+.nt-trophy { font-size: 28px; }
+.nt-achieve-toast strong { display: block; font-size: 13px; }
+.nt-achieve-toast p { font-size: 11px; opacity: 0.9; }

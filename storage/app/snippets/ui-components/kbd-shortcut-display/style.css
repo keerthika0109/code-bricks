@@ -1,0 +1,4 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.ui-wrap p { font-size: 14px; color: #374151; }
+kbd { background: #f3f4f6; border: 1px solid #e5e7eb; border-bottom-width: 2px; padding: 3px 8px; border-radius: 6px; font-family: monospace; font-size: 12px; margin: 0 2px; }

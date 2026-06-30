@@ -1,0 +1,10 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cf-chat-form { width: 300px; padding: 26px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cf-chat-form h2 { margin-bottom: 14px; }
+.cf-chat-cta { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-bottom: 12px; }
+.cf-chat-divider { text-align: center; font-size: 11px; color: #9ca3af; margin-bottom: 12px; }
+.cf-chat-form input, .cf-chat-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-family: inherit; }
+.cf-chat-form textarea { height: 70px; resize: none; }
+.cf-chat-form button[type="submit"] { width: 100%; padding: 11px; background: #f3f4f6; color: #374151; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

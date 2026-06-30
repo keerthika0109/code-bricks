@@ -1,0 +1,6 @@
+:root { --accent: #475569; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn18 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-thumb-toast { position: fixed; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 10px; background: white; border: 1px solid #e5e7eb; padding: 10px 16px; border-radius: 10px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+.nt-thumb { width: 36px; height: 36px; background: linear-gradient(135deg, #6366f1, #ec4899); border-radius: 6px; }

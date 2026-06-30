@@ -1,0 +1,8 @@
+:root { --accent: #4f46e5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 380px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.search-header { background: var(--accent); padding: 16px; color: white; }
+.search-header h3 { margin-bottom: 10px; }
+.search-header-bar input { width: 100%; padding: 10px 14px; border-radius: 20px; border: none; outline: none; }
+.mob-screen { padding: 20px; text-align: center; color: #9ca3af; }

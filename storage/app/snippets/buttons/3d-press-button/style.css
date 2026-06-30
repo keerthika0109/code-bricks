@@ -1,0 +1,5 @@
+:root { --btn-bg: #22c55e; --btn-shadow: #15803d; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f1f5f9; font-family: system-ui, sans-serif; }
+.press-btn { padding: 16px 40px; font-size: 16px; font-weight: 700; color: white; background: var(--btn-bg); border: none; border-radius: 10px; box-shadow: 0 6px 0 var(--btn-shadow); cursor: pointer; transition: transform 0.1s ease, box-shadow 0.1s ease; }
+.press-btn:active { transform: translateY(6px); box-shadow: 0 0 0 var(--btn-shadow); }

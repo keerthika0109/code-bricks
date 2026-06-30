@@ -1,0 +1,10 @@
+:root { --up-color: #16a34a; --down-color: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; }
+.stat-row { display: flex; gap: 14px; }
+.stat-card { width: 140px; padding: 16px; background: white; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.stat-card span { font-size: 11px; color: #9ca3af; }
+.stat-card h3 { font-size: 22px; margin: 6px 0; }
+.stat-card i { font-size: 11px; font-style: normal; font-weight: 600; }
+.up { color: var(--up-color); }
+.down { color: var(--down-color); }

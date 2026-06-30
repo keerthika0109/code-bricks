@@ -1,0 +1,9 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-accordion-wrap { background: #f9fafb; padding: 20px 30px; }
+.ft-acc-group { border-bottom: 1px solid #e5e7eb; }
+.ft-acc-header { width: 100%; padding: 14px 0; background: none; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; color: var(--accent); }
+.ft-acc-body { padding-bottom: 14px; }
+.ft-acc-body a { display: block; color: #6b7280; text-decoration: none; font-size: 12px; padding: 4px 0; }
+.ft-accordion-wrap p { font-size: 11px; color: #9ca3af; margin-top: 16px; }

@@ -1,0 +1,8 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#mdOpen4 { padding: 12px 24px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.md-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; }
+.md-video-box { position: relative; width: 480px; }
+.md-video-frame { width: 100%; aspect-ratio: 16/9; background: #1f2937; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; }
+.md-close { position: absolute; top: -36px; right: 0; background: none; border: none; color: white; font-size: 20px; cursor: pointer; }

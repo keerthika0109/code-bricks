@@ -1,0 +1,9 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn25 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-perm-toast { position: fixed; top: 24px; right: 24px; background: white; border: 1px solid #e5e7eb; padding: 14px 18px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); font-size: 13px; }
+.nt-perm-toast div { margin-top: 10px; display: flex; gap: 8px; }
+.nt-perm-toast button { padding: 6px 14px; border: none; border-radius: 6px; font-size: 12px; cursor: pointer; }
+#ntPermAllow25 { background: var(--accent); color: white; }
+#ntPermBlock25 { background: #f3f4f6; }

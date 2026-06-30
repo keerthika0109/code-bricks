@@ -1,0 +1,5 @@
+:root { --text-color: #475569; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; }
+.marquee-track { display: flex; gap: 50px; white-space: nowrap; animation: marquee-scroll 12s linear infinite; font-weight: 700; color: var(--text-color); font-size: 20px; }
+@keyframes marquee-scroll { to { transform: translateX(-50%); } }

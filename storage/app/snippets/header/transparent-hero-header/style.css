@@ -1,0 +1,11 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-hero { background: linear-gradient(135deg, #4f46e5, #7c3aed); min-height: 240px; position: relative; }
+.hd-trans { display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; position: absolute; top: 0; left: 0; right: 0; transition: background 0.3s ease; }
+.hd-trans.scrolled { background: white; }
+.hd-logo { font-weight: 800; color: white; }
+.hd-trans.scrolled .hd-logo { color: #4f46e5; }
+.hd-nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+.hd-trans.scrolled .hd-nav a { color: #4b5563; }
+.hd-hero-content { padding: 90px 30px 0; color: white; }
+.hd-hero-content h1 { font-size: 26px; }

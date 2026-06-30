@@ -1,0 +1,11 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #faf5ff; }
+.pricing-card { position: relative; width: 260px; padding: 30px 26px; background: white; border: 2px solid var(--accent); border-radius: 16px; text-align: center; }
+.ribbon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; font-size: 11px; padding: 5px 14px; border-radius: 20px; font-weight: 700; }
+.pricing-card h3 { margin: 10px 0; }
+.price { font-size: 36px; font-weight: 800; margin-bottom: 18px; }
+.price span { font-size: 14px; font-weight: 400; color: #9ca3af; }
+.pricing-card ul { list-style: none; text-align: left; margin-bottom: 22px; font-size: 13px; color: #4b5563; }
+.pricing-card li { padding: 6px 0; }
+.pricing-card button { width: 100%; padding: 12px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

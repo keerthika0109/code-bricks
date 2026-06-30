@@ -1,0 +1,7 @@
+:root { --accent: #111827; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.expand-search { display: flex; align-items: center; background: #f3f4f6; border-radius: 24px; overflow: hidden; }
+#expandBtn { width: 44px; height: 44px; border: none; background: none; font-size: 16px; cursor: pointer; }
+.expand-search input { border: none; background: none; outline: none; width: 0; transition: width 0.3s ease; padding: 0; }
+.expand-search.open input { width: 180px; padding-right: 14px; }

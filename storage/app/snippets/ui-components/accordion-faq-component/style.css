@@ -1,0 +1,7 @@
+:root { --accent: #4f46e5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #fff; margin: 0; }
+.faq-list { width: 320px; }
+.faq-item { border-bottom: 1px solid #e5e7eb; }
+.faq-q { width: 100%; padding: 14px 0; background: none; border: none; text-align: left; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; color: var(--accent); }
+.faq-a { padding-bottom: 14px; font-size: 13px; color: #6b7280; }

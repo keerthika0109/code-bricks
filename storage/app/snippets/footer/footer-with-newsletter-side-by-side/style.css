@@ -1,0 +1,12 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-sidebyside-wrap { display: flex; }
+.ft-sbs-links { flex: 1; padding: 30px; background: #f9fafb; }
+.ft-sbs-links h4 { margin-bottom: 10px; font-size: 13px; }
+.ft-sbs-links a { display: block; color: #6b7280; text-decoration: none; font-size: 12px; padding: 3px 0; }
+.ft-sbs-news { flex: 1; padding: 30px; background: var(--accent); color: white; }
+.ft-sbs-news h4 { margin-bottom: 12px; }
+.ft-sbs-news input { width: 100%; padding: 9px; border: none; border-radius: 6px; margin-bottom: 8px; }
+.ft-sbs-news button { padding: 9px 18px; background: white; color: var(--accent); border: none; border-radius: 6px; font-weight: 700; cursor: pointer; }
+@media (max-width: 600px) { .ft-sidebyside-wrap { flex-direction: column; } }

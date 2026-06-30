@@ -1,0 +1,5 @@
+:root { --badge-bg: #fbbf24; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.attn-badge { padding: 14px 24px; background: var(--badge-bg); border-radius: 10px; font-weight: 700; animation: attn-shake 0.6s ease 1; }
+@keyframes attn-shake { 0%,100% { transform: translateX(0); } 20% { transform: translateX(-10px) rotate(-2deg); } 40% { transform: translateX(8px) rotate(2deg); } 60% { transform: translateX(-6px); } 80% { transform: translateX(4px); } }

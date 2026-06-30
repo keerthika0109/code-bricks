@@ -1,0 +1,5 @@
+:root { --alert-bg: #fef3c7; --alert-text: #92400e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.dash-alert-banner { width: 100%; padding: 12px 16px; background: var(--alert-bg); color: var(--alert-text); border-radius: 8px; font-size: 12px; }
+.dash-alert-banner a { color: var(--alert-text); font-weight: 700; text-decoration: underline; }

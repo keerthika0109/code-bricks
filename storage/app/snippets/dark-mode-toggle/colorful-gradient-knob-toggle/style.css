@@ -1,0 +1,10 @@
+:root { --g1: #f59e0b; --g2: #ef4444; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.grad-knob-toggle { position: relative; width: 56px; height: 28px; }
+.grad-knob-toggle input { opacity: 0; }
+.grad-knob-slider { position: absolute; inset: 0; background: #e5e7eb; border-radius: 28px; cursor: pointer; transition: 0.3s; }
+.grad-knob-slider::before { content: ''; position: absolute; width: 22px; height: 22px; left: 3px; top: 3px; background: linear-gradient(135deg, var(--g1), var(--g2)); border-radius: 50%; transition: 0.3s; }
+input:checked + .grad-knob-slider { background: #1e293b; }
+input:checked + .grad-knob-slider::before { transform: translateX(28px); }

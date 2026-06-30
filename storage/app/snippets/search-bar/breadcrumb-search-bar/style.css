@@ -1,0 +1,7 @@
+:root { --accent: #ea580c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.crumb-search { display: flex; align-items: center; gap: 8px; width: 320px; padding: 8px 10px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.crumb-chip { display: flex; align-items: center; gap: 6px; background: #fff7ed; color: var(--accent); font-size: 12px; padding: 4px 10px; border-radius: 14px; font-weight: 600; white-space: nowrap; }
+.crumb-chip button { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 11px; }
+.crumb-search input { flex: 1; border: none; outline: none; min-width: 60px; }

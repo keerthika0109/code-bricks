@@ -1,0 +1,9 @@
+:root { --accent: #111827; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cookie-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--accent); color: white; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.cookie-bar p { font-size: 13px; }
+.cookie-bar a { color: #93c5fd; }
+.cookie-actions button { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; margin-left: 8px; }
+#cookieCustom { background: transparent; color: white; border: 1px solid #4b5563; }
+#cookieAccept { background: white; color: var(--accent); }

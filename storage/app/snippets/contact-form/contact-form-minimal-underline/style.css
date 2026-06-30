@@ -1,0 +1,8 @@
+:root { --accent: #000000; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cf-underline-form { width: 300px; }
+.cf-underline-form h2 { margin-bottom: 20px; font-size: 24px; }
+.cf-u-input { width: 100%; padding: 10px 0; margin-bottom: 18px; border: none; border-bottom: 1px solid #d1d5db; outline: none; font-family: inherit; resize: none; }
+.cf-u-input:focus { border-bottom-color: var(--accent); }
+.cf-underline-form button { background: none; border: none; color: var(--accent); font-weight: 700; font-size: 15px; cursor: pointer; padding: 0; }

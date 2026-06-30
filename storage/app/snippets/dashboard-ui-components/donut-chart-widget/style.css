@@ -1,0 +1,8 @@
+:root { --donut-color: #ec4899; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.donut-widget { width: 200px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; text-align: center; }
+.donut-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.donut-chart { width: 100px; height: 100px; margin: 0 auto; border-radius: 50%; background: conic-gradient(var(--donut-color) 68%, #f3f4f6 0); display: flex; align-items: center; justify-content: center; position: relative; }
+.donut-chart::before { content: ''; position: absolute; inset: 12px; background: white; border-radius: 50%; }
+.donut-chart span { position: relative; font-weight: 700; }

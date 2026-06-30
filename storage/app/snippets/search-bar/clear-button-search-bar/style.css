@@ -1,0 +1,6 @@
+:root { --accent: #475569; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.clear-search { position: relative; width: 280px; }
+.clear-search input { width: 100%; padding: 12px 36px 12px 16px; border: 1px solid #e5e7eb; border-radius: 8px; outline: none; }
+.clear-search button { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--accent); cursor: pointer; font-size: 14px; }

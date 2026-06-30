@@ -1,0 +1,6 @@
+:root { --text-color: #4f46e5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.text-ring-ld { position: relative; width: 100px; height: 100px; animation: spin-ld 4s linear infinite; }
+.text-ring-ld span { position: absolute; left: 50%; top: 0; font-size: 11px; font-weight: 700; color: var(--text-color); transform-origin: 0 50px; }
+@keyframes spin-ld { to { transform: rotate(360deg); } }

@@ -1,0 +1,11 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.combo-cal { display: flex; gap: 16px; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cal-header { font-weight: 700; margin-bottom: 10px; font-size: 13px; }
+.combo-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-size: 11px; text-align: center; }
+.combo-cal-grid span { padding: 5px 0; border-radius: 4px; }
+.combo-today { background: var(--accent); color: white; }
+.combo-cal-events { border-left: 1px solid #f3f4f6; padding-left: 14px; width: 120px; }
+.combo-cal-events h4 { font-size: 11px; margin-bottom: 8px; color: var(--accent); }
+.combo-cal-events p { font-size: 11px; color: #6b7280; padding: 3px 0; }

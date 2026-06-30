@@ -1,0 +1,8 @@
+:root { --accent: #38bdf8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.cf-dark-form { width: 300px; padding: 26px; background: #1e293b; border: 1px solid #334155; border-radius: 14px; }
+.cf-dark-form h2 { color: white; margin-bottom: 14px; }
+.cf-dark-form input, .cf-dark-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #334155; background: #0f172a; color: white; border-radius: 8px; font-family: inherit; }
+.cf-dark-form textarea { height: 70px; resize: none; }
+.cf-dark-form button { width: 100%; padding: 11px; background: var(--accent); color: #0f172a; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

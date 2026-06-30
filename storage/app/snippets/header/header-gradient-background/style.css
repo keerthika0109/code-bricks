@@ -1,0 +1,7 @@
+:root { --g1: #6366f1; --g2: #ec4899; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-grad-wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; background: linear-gradient(135deg, var(--g1), var(--g2)); }
+.hd-logo { font-weight: 800; color: white; }
+.hd-grad-wrap nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+.hd-grad-cta { background: white; color: var(--g1); padding: 8px 16px; border-radius: 8px; font-weight: 700; }

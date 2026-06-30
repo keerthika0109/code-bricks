@@ -1,0 +1,7 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.datetime-dp { display: flex; gap: 10px; }
+.datetime-dp label { display: block; font-size: 11px; color: #9ca3af; margin-bottom: 4px; }
+.datetime-dp input { padding: 9px 12px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.datetime-dp input:focus { border-color: var(--accent); outline: none; }

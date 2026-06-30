@@ -1,0 +1,11 @@
+:root { --accent: #92400e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen14 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.pp-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.qv-pp-box { position: relative; display: flex; width: 420px; background: white; border-radius: 14px; overflow: hidden; }
+.pp-close { position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.8); border: none; border-radius: 50%; width: 26px; height: 26px; cursor: pointer; }
+.qv-pp-img { width: 160px; background: linear-gradient(135deg, #92400e, #451a03); }
+.qv-pp-info { padding: 22px; flex: 1; }
+.qv-pp-price { font-weight: 700; color: var(--accent); margin-bottom: 16px; }
+.qv-pp-info button { width: 100%; padding: 10px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

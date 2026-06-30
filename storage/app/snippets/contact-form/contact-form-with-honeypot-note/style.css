@@ -1,0 +1,9 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cf-spam-form { width: 300px; padding: 26px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cf-spam-form h2 { margin-bottom: 14px; }
+.cf-spam-form input, .cf-spam-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-family: inherit; }
+.cf-spam-form textarea { height: 70px; resize: none; }
+.cf-spam-form button { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; margin-bottom: 8px; }
+.cf-spam-note { font-size: 10px; color: #9ca3af; text-align: center; }

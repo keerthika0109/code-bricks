@@ -1,0 +1,9 @@
+:root { --g1: #7c3aed; --g2: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--g1), var(--g2)); color: white; text-align: center; }
+.gf-wrap h1 { font-size: 32px; margin-bottom: 10px; }
+.gf-wrap p { opacity: 0.9; margin-bottom: 26px; }
+.gf-actions { display: flex; gap: 12px; }
+.gf-actions button { padding: 12px 28px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; }
+.gf-stay { background: rgba(255,255,255,0.2); color: white; }
+.gf-out { background: white; color: var(--g1); }

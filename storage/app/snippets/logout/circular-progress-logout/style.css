@@ -1,0 +1,7 @@
+:root { --ring-color: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cp-card { text-align: center; }
+.cp-card p { margin: 14px 0; font-size: 13px; color: #6b7280; }
+#cpCancel { padding: 9px 22px; background: #f3f4f6; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+#cpRing { stroke: var(--ring-color); transition: stroke-dashoffset 1s linear; }

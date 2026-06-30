@@ -1,0 +1,9 @@
+:root { --accent: #1f2937; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-theme-wrap { display: flex; justify-content: space-between; align-items: center; padding: 18px 30px; border-top: 1px solid #e5e7eb; transition: background 0.3s ease; }
+.ft-theme-wrap.dark { background: #0f172a; color: white; }
+.ft-theme-wrap p { font-size: 12px; color: #9ca3af; }
+.ft-theme-wrap.dark p { color: #94a3b8; }
+#ftThemeBtn25 { padding: 7px 14px; border: 1px solid #e5e7eb; background: white; border-radius: 8px; cursor: pointer; font-size: 12px; }
+.ft-theme-wrap.dark #ftThemeBtn25 { background: #1e293b; border-color: #334155; color: white; }

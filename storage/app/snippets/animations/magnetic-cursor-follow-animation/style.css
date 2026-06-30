@@ -1,0 +1,5 @@
+:root { --dot-color: #f43f5e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.an-wrap { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; cursor: none; overflow: hidden; }
+.cursor-dot { position: fixed; width: 20px; height: 20px; background: var(--dot-color); border-radius: 50%; pointer-events: none; transition: transform 0.1s ease-out; transform: translate(-50%, -50%); }

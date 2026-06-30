@@ -1,0 +1,5 @@
+:root { --btn-color: #1d4ed8; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f8fafc; font-family: system-ui, sans-serif; }
+.double-border-btn { padding: 14px 34px; font-size: 16px; font-weight: 700; color: var(--btn-color); background: white; border: 2px solid var(--btn-color); border-radius: 4px; cursor: pointer; box-shadow: 0 0 0 2px white, 0 0 0 4px var(--btn-color); margin: 4px; transition: transform 0.2s ease; }
+.double-border-btn:hover { transform: scale(1.03); }

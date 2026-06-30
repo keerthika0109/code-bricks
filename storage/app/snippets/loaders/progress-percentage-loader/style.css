@@ -1,0 +1,6 @@
+:root { --ring-color: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.pct-ring { position: relative; width: 80px; height: 80px; }
+.pct-ring span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
+#pctCircle { stroke: var(--ring-color); transition: stroke-dashoffset 0.2s linear; }

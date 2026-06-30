@@ -1,0 +1,8 @@
+:root { --accent: #1e40af; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-burger-wrap { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-burger-btn { border: none; background: none; font-size: 20px; cursor: pointer; }
+.hd-burger-menu { position: absolute; top: 100%; left: 0; right: 0; background: white; border-bottom: 1px solid #e5e7eb; display: flex; flex-direction: column; padding: 10px 20px; }
+.hd-burger-menu a { padding: 10px 0; text-decoration: none; color: #4b5563; border-top: 1px solid #f3f4f6; font-size: 14px; }

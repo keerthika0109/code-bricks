@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.an-wrap { min-height: 100vh; display: flex; overflow: hidden; }
+.wave-svg { width: 200%; height: 150px; animation: wave-scroll 8s linear infinite; }
+@keyframes wave-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }

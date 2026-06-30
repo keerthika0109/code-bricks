@@ -1,0 +1,9 @@
+:root { --accent: #1d4ed8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.sync-cal { width: 280px; padding: 18px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-align: center; }
+.cal-header { font-weight: 700; margin-bottom: 12px; }
+.sync-cal-grid { display: flex; justify-content: center; gap: 6px; font-size: 12px; margin-bottom: 14px; }
+.sync-day { background: var(--accent); color: white; border-radius: 4px; padding: 0 6px; }
+.sync-buttons { display: flex; gap: 8px; }
+.sync-buttons button { flex: 1; padding: 9px; border: 1px solid #e5e7eb; border-radius: 8px; background: white; cursor: pointer; font-size: 12px; }

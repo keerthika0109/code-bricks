@@ -1,0 +1,6 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; position: relative; background: #fff; }
+.mob-screen { padding: 20px; height: 100%; color: #9ca3af; position: relative; }
+.mob-fab { position: absolute; bottom: 20px; right: 20px; width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: white; font-size: 26px; border: none; box-shadow: 0 4px 14px rgba(37,99,235,0.4); cursor: pointer; }

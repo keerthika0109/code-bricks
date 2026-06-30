@@ -1,0 +1,6 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.hero-search { display: flex; width: 420px; background: rgba(255,255,255,0.95); border-radius: 12px; padding: 4px; }
+.hero-search input { flex: 1; border: none; outline: none; padding: 14px 16px; border-radius: 10px; background: none; }
+.hero-search button { padding: 0 26px; background: var(--accent); color: white; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; }

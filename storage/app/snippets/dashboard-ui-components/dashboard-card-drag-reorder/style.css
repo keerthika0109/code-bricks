@@ -1,0 +1,6 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.drag-dash-row { display: flex; gap: 10px; }
+.drag-dash-card { width: 100px; height: 70px; background: white; border: 2px solid var(--accent); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; cursor: grab; }
+.drag-dash-card.dragging { opacity: 0.4; }

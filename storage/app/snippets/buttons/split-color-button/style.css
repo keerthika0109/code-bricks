@@ -1,0 +1,5 @@
+:root { --color-a: #06b6d4; --color-b: #1e3a8a; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f1f5f9; font-family: system-ui, sans-serif; }
+.split-btn { position: relative; padding: 16px 44px; font-size: 16px; font-weight: 700; color: white; background: var(--color-a); border: none; border-radius: 6px; cursor: pointer; overflow: hidden; z-index: 0; }
+.split-btn::before { content: ''; position: absolute; inset: 0; background: var(--color-b); clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%); z-index: -1; }

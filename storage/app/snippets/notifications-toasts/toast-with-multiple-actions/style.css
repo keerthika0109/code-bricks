@@ -1,0 +1,9 @@
+:root { --accent: #0f766e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn29 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-multi-action-toast { position: fixed; bottom: 24px; right: 24px; background: white; border: 1px solid #e5e7eb; padding: 14px 18px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); font-size: 13px; max-width: 240px; }
+.nt-multi-action-toast div { margin-top: 10px; display: flex; gap: 8px; }
+.nt-multi-action-toast button { padding: 6px 14px; border: none; border-radius: 6px; font-size: 12px; cursor: pointer; }
+#ntAccept29 { background: var(--accent); color: white; }
+#ntDecline29 { background: #f3f4f6; }

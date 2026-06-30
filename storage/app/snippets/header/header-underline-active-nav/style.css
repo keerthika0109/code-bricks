@@ -1,0 +1,9 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-underline-wrap { display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-underline-nav { position: relative; display: flex; gap: 20px; }
+.hd-underline-nav a { text-decoration: none; color: #4b5563; font-size: 14px; padding-bottom: 4px; }
+.hd-underline-nav a.active { color: var(--accent); }
+.hd-underline-bar { position: absolute; bottom: -1px; left: 0; height: 2px; width: 45px; background: var(--accent); transition: transform 0.3s ease; }

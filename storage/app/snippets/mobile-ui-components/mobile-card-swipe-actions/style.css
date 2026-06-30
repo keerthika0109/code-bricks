@@ -1,0 +1,8 @@
+:root { --danger: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 200px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.swipe-item { position: relative; overflow: hidden; }
+.swipe-content { padding: 16px 20px; background: white; border-bottom: 1px solid #f3f4f6; transition: transform 0.3s ease; }
+.swipe-item.swiped .swipe-content { transform: translateX(-90px); }
+.swipe-delete { position: absolute; right: 0; top: 0; height: 100%; width: 90px; background: var(--danger); color: white; border: none; cursor: pointer; }

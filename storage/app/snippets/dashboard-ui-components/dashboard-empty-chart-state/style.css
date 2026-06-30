@@ -1,0 +1,6 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.empty-chart-widget { width: 240px; padding: 30px 20px; background: white; border: 1px dashed #e5e7eb; border-radius: 14px; text-align: center; }
+.ecw-icon { font-size: 28px; margin-bottom: 8px; opacity: 0.4; }
+.empty-chart-widget p { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.empty-chart-widget span { font-size: 11px; color: #9ca3af; }

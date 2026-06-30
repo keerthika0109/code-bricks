@@ -1,0 +1,11 @@
+:root { --accent: #be185d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fdf2f8; }
+.st-stack { position: relative; width: 300px; }
+.st-back-1, .st-back-2 { position: absolute; inset: 0; background: white; border-radius: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.st-back-1 { transform: rotate(-4deg) translateY(4px); }
+.st-back-2 { transform: rotate(4deg) translateY(4px); }
+.st-card { position: relative; padding: 28px; background: white; border-radius: 14px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); text-align: center; }
+.st-card h2 { margin-bottom: 8px; }
+.st-card p { font-size: 13px; color: #6b7280; margin-bottom: 18px; }
+.st-btn { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

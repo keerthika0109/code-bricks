@@ -1,0 +1,4 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn30 { padding: 11px 22px; background: #f3f4f6; color: #111827; border: none; border-radius: 8px; cursor: pointer; }
+.nt-minimal-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #111827; color: white; padding: 8px 16px; border-radius: 6px; font-size: 12px; }

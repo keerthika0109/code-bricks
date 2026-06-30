@@ -1,0 +1,7 @@
+:root { --accent: #0f766e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 220px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.mob-expand-card { margin: 0 16px; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+.mec-header { padding: 14px; font-weight: 600; font-size: 13px; display: flex; justify-content: space-between; cursor: pointer; color: var(--accent); }
+.mec-body { padding: 0 14px 14px; font-size: 12px; color: #6b7280; }

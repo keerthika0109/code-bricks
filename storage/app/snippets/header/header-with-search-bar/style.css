@@ -1,0 +1,7 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-search-wrap { display: flex; align-items: center; gap: 20px; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-search-input { flex: 1; max-width: 320px; padding: 9px 14px; border: 1px solid #e5e7eb; border-radius: 20px; outline: none; }
+.hd-nav a { text-decoration: none; color: #4b5563; font-size: 14px; margin-left: auto; }

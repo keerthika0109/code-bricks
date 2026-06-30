@@ -1,0 +1,10 @@
+:root { --ok-color: #16a34a; --warn-color: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.status-widget { width: 260px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.status-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.sw-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 12px; color: #4b5563; }
+.sw-row span { width: 70px; }
+.sw-ok, .sw-warn { width: 8px; height: 8px; border-radius: 50%; }
+.sw-ok { background: var(--ok-color); }
+.sw-warn { background: var(--warn-color); }

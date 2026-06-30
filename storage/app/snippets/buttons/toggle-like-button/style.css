@@ -1,0 +1,6 @@
+:root { --like-color: #f43f5e; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.like-btn { display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: #f3f4f6; border: none; border-radius: 30px; cursor: pointer; font-size: 15px; font-weight: 600; color: #374151; }
+.heart-icon { fill: none; stroke: #9ca3af; stroke-width: 1.5; transition: all 0.25s ease; }
+.like-btn[aria-pressed="true"] .heart-icon { fill: var(--like-color); stroke: var(--like-color); transform: scale(1.15); }

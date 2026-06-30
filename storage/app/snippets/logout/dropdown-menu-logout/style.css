@@ -1,0 +1,11 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: flex-start; justify-content: center; padding-top: 60px; background: #f8fafc; }
+.dd-container { position: relative; }
+.dd-trigger { padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 8px; background: white; cursor: pointer; font-weight: 600; }
+.dd-menu { position: absolute; top: 110%; right: 0; width: 160px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); display: none; flex-direction: column; padding: 6px; }
+.dd-menu.open { display: flex; }
+.dd-menu a { padding: 9px 12px; color: #374151; text-decoration: none; border-radius: 6px; font-size: 14px; }
+.dd-menu a:hover { background: #f3f4f6; }
+.dd-menu hr { border: none; border-top: 1px solid #f3f4f6; margin: 4px 0; }
+.dd-logout { color: var(--accent); font-weight: 600; }

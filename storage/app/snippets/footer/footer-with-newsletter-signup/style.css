@@ -1,0 +1,11 @@
+:root { --accent: #6366f1; --bg-color: #0f172a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-news-wrap { background: var(--bg-color); color: #cbd5e1; padding: 40px 30px 20px; }
+.ft-news-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; flex-wrap: wrap; gap: 20px; }
+.ft-news-top h3 { color: white; margin-bottom: 6px; }
+.ft-news-top p { font-size: 13px; }
+.ft-news-form { display: flex; gap: 8px; }
+.ft-news-form input { padding: 9px 12px; border: 1px solid #334155; background: #1e293b; color: white; border-radius: 6px; }
+.ft-news-form button { padding: 9px 16px; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+.ft-news-bottom { border-top: 1px solid #1e293b; padding-top: 16px; font-size: 12px; }

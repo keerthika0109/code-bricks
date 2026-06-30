@@ -1,0 +1,5 @@
+:root { --border-color: #9ca3af; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.dashed-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; font-size: 15px; font-weight: 600; color: #4b5563; background: transparent; border: 2px dashed var(--border-color); border-radius: 10px; cursor: pointer; transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease; }
+.dashed-btn:hover { border-color: #6366f1; color: #6366f1; background: #eef2ff; }

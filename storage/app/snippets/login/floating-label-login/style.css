@@ -1,0 +1,12 @@
+:root { --primary-color: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; }
+.float-card { width: 340px; padding: 36px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.float-card h2 { margin-bottom: 24px; }
+.field { position: relative; margin-bottom: 22px; }
+.field input { width: 100%; padding: 14px 12px 6px; border: none; border-bottom: 2px solid #d1d5db; font-size: 15px; outline: none; }
+.field label { position: absolute; left: 12px; top: 14px; color: #9ca3af; font-size: 15px; transition: 0.2s ease; pointer-events: none; }
+.field input:focus ~ label,
+.field input:not(:placeholder-shown) ~ label { top: -6px; font-size: 12px; color: var(--primary-color); }
+.field input:focus { border-bottom-color: var(--primary-color); }
+.float-card button { width: 100%; padding: 13px; background: var(--primary-color); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; }

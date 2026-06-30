@@ -1,0 +1,9 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; position: relative; background: #fff; }
+.mob-screen { padding: 20px; height: calc(100% - 60px); display: flex; align-items: center; justify-content: center; color: #9ca3af; }
+.bottom-tabs { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; display: flex; border-top: 1px solid #e5e7eb; background: white; }
+.bt-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; border: none; background: none; font-size: 18px; color: #9ca3af; }
+.bt-item span { font-size: 10px; }
+.bt-item.active { color: var(--accent); }

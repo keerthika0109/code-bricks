@@ -1,0 +1,10 @@
+:root { --sq-color: #ef4444; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.pinwheel-ld { position: relative; width: 50px; height: 50px; animation: spin-ld 1.5s linear infinite; }
+.pinwheel-ld span { position: absolute; width: 18px; height: 18px; background: var(--sq-color); }
+.pinwheel-ld span:nth-child(1) { top: 0; left: 0; }
+.pinwheel-ld span:nth-child(2) { top: 0; right: 0; opacity: 0.7; }
+.pinwheel-ld span:nth-child(3) { bottom: 0; right: 0; opacity: 0.4; }
+.pinwheel-ld span:nth-child(4) { bottom: 0; left: 0; opacity: 0.2; }
+@keyframes spin-ld { to { transform: rotate(360deg); } }

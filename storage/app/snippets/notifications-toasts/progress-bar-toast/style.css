@@ -1,0 +1,8 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn5 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-progress-toast { position: fixed; bottom: 24px; right: 24px; width: 240px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+.nt-progress-toast p { padding: 12px 16px; font-size: 13px; }
+.nt-prog-bar { height: 3px; background: #f3f4f6; }
+#ntProgFill5 { height: 100%; width: 100%; background: var(--accent); transition: width 3s linear; }

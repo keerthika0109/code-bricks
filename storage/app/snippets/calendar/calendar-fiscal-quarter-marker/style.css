@@ -1,0 +1,7 @@
+:root { --accent: #0f766e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.fiscal-cal { width: 280px; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08); background: white; }
+.fiscal-band { background: var(--accent); color: white; padding: 6px; text-align: center; font-size: 11px; font-weight: 700; }
+.cal-header { text-align: center; font-weight: 700; padding: 12px 0 8px; }
+.fiscal-cal-grid { display: flex; gap: 6px; justify-content: center; padding-bottom: 14px; font-size: 12px; }

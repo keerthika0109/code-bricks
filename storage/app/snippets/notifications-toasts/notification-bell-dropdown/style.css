@@ -1,0 +1,8 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.bell-dropdown { position: relative; }
+#bellBtn7 { position: relative; width: 46px; height: 46px; border-radius: 50%; border: 1px solid #e5e7eb; background: white; cursor: pointer; font-size: 18px; }
+.bell-badge { position: absolute; top: 2px; right: 2px; background: var(--accent); color: white; font-size: 9px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.bell-list { position: absolute; top: 110%; right: 0; width: 220px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); }
+.bell-item { padding: 10px 14px; font-size: 12px; border-bottom: 1px solid #f3f4f6; }

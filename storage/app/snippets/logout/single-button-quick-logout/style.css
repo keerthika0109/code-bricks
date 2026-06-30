@@ -1,0 +1,5 @@
+:root { --danger: #ef4444; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.qk-btn { padding: 16px 48px; background: var(--danger); color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; transition: background 0.2s ease; }
+.qk-btn:hover { background: #dc2626; }

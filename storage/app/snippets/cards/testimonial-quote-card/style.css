@@ -1,0 +1,10 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fdf2f8; }
+.quote-card { width: 300px; padding: 28px; background: white; border-radius: 16px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.quote-mark { font-size: 48px; color: var(--accent); line-height: 1; font-family: Georgia, serif; }
+.quote-card p { font-size: 14px; color: #374151; margin: 10px 0 20px; line-height: 1.5; }
+.quote-author { display: flex; align-items: center; gap: 10px; }
+.quote-avatar { width: 36px; height: 36px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.quote-author strong { display: block; font-size: 13px; }
+.quote-author span { font-size: 11px; color: #9ca3af; }

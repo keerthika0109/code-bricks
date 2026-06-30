@@ -1,0 +1,6 @@
+:root { --btn-bg: #0f172a; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f1f5f9; font-family: system-ui, sans-serif; }
+.icon-slide-btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; font-size: 16px; font-weight: 600; color: white; background: var(--btn-bg); border: none; border-radius: 8px; cursor: pointer; }
+.icon-slide-btn .arrow { transition: transform 0.3s ease; }
+.icon-slide-btn:hover .arrow { transform: translateX(6px); }

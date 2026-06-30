@@ -1,0 +1,5 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { margin: 0; font-family: system-ui, sans-serif; }
+.bg-shift-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #fde68a, #93c5fd); transition: background 1s ease; }
+.bg-shift-wrap.night-scene { background: linear-gradient(135deg, #1e1b4b, #0f172a); }
+.bg-shift-btn { padding: 12px 24px; background: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }

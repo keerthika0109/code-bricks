@@ -1,0 +1,8 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ppOpen20 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.browser-pp-notif { position: fixed; top: 20px; right: 20px; display: flex; gap: 10px; background: white; border: 1px solid #e5e7eb; padding: 14px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.12); width: 260px; }
+.browser-pp-icon { width: 36px; height: 36px; background: var(--accent); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 11px; flex-shrink: 0; }
+.browser-pp-notif strong { font-size: 13px; }
+.browser-pp-notif p { font-size: 12px; color: #6b7280; margin-top: 2px; }

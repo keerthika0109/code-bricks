@@ -1,0 +1,8 @@
+:root { --primary-color: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #faf5ff; }
+.logo-card { width: 320px; padding: 36px 32px; background: white; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; }
+.logo-circle { width: 56px; height: 56px; margin: 0 auto 14px; background: var(--primary-color); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; }
+.logo-card h2 { margin-bottom: 20px; }
+.logo-card input { width: 100%; padding: 11px; margin-bottom: 12px; border: 1px solid #e5e7eb; border-radius: 8px; text-align: left; }
+.logo-card button { width: 100%; padding: 11px; background: var(--primary-color); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

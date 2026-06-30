@@ -1,0 +1,5 @@
+:root { --accent: #92400e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn19 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-offline-toast { position: fixed; top: 0; left: 0; right: 0; background: var(--accent); color: white; padding: 12px; text-align: center; font-size: 13px; }

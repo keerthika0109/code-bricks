@@ -1,0 +1,5 @@
+:root { --neon-color: #22d3ee; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#000; font-family: system-ui, sans-serif; }
+.neon-btn { padding: 14px 36px; font-size: 15px; font-weight: 600; letter-spacing: 1px; color: var(--neon-color); background: transparent; border: 2px solid var(--neon-color); border-radius: 6px; cursor: pointer; text-transform: uppercase; box-shadow: 0 0 6px var(--neon-color), 0 0 12px var(--neon-color) inset; animation: pulse 2s infinite ease-in-out; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 6px var(--neon-color), 0 0 12px var(--neon-color) inset; } 50% { box-shadow: 0 0 16px var(--neon-color), 0 0 24px var(--neon-color) inset; } }

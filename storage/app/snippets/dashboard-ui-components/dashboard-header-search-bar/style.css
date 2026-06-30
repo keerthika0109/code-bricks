@@ -1,0 +1,7 @@
+:root { --accent: #4f46e5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f8fafc; margin: 0; }
+.dash-header { display: flex; align-items: center; gap: 16px; width: 400px; padding: 12px 20px; background: white; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.dh-logo { font-weight: 800; color: var(--accent); }
+.dh-search { flex: 1; padding: 8px 12px; border: 1px solid #e5e7eb; border-radius: 20px; outline: none; }
+.dh-avatar { width: 32px; height: 32px; background: var(--accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }

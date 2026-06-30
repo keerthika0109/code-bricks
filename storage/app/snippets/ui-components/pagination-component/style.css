@@ -1,0 +1,7 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.pagination { display: flex; align-items: center; gap: 4px; }
+.page-btn, .page-num { width: 32px; height: 32px; border: 1px solid #e5e7eb; background: white; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.page-num.active { background: var(--accent); color: white; border-color: var(--accent); }
+.pagination span { padding: 0 4px; color: #9ca3af; }

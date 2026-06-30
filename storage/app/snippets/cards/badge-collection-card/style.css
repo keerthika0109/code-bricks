@@ -1,0 +1,8 @@
+:root { --earned-bg: #fef3c7; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.badge-card { width: 280px; padding: 22px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.badge-card h3 { margin-bottom: 16px; font-size: 15px; }
+.badge-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.badge { aspect-ratio: 1; background: #f3f4f6; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; opacity: 0.3; }
+.badge.earned { background: var(--earned-bg); opacity: 1; }

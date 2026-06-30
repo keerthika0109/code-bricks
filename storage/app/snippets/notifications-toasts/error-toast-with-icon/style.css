@@ -1,0 +1,7 @@
+:root { --error-color: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn2 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-toast { position: fixed; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; color: white; font-size: 13px; }
+.nt-error { background: var(--error-color); }
+.nt-error button { background: none; border: none; color: white; cursor: pointer; }

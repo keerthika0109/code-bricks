@@ -1,0 +1,6 @@
+:root { --accent: #374151; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.sidebar-toggle-item { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border: none; background: #f3f4f6; border-radius: 8px; cursor: pointer; font-weight: 600; color: var(--accent); width: 180px; }
+body.dark .sidebar-toggle-item { background: #1e293b; color: #e2e8f0; }

@@ -1,0 +1,7 @@
+:root { --accent: #4f46e5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #eef2ff, #fae8ff); text-align: center; }
+.gb-icon { font-size: 48px; margin-bottom: 16px; }
+.gb-content h1 { margin-bottom: 10px; }
+.gb-content p { color: #6b7280; margin-bottom: 24px; }
+.gb-link { display: inline-block; padding: 11px 28px; background: var(--accent); color: white; border-radius: 8px; text-decoration: none; font-weight: 600; }

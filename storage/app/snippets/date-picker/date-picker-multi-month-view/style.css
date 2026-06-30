@@ -1,0 +1,8 @@
+:root { --accent: #be185d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.two-month-dp { display: flex; gap: 16px; background: white; padding: 18px; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cal-header { text-align: center; font-weight: 700; margin-bottom: 8px; font-size: 13px; }
+.tm-grid { display: flex; gap: 4px; font-size: 11px; }
+.tm-grid span { width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+.tm-sel { background: var(--accent); color: white; }

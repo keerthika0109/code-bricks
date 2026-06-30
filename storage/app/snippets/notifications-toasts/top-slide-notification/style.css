@@ -1,0 +1,6 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn3 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-top-bar { position: fixed; top: -60px; left: 0; right: 0; background: var(--accent); color: white; padding: 14px; text-align: center; font-size: 13px; transition: top 0.4s ease; }
+.nt-top-bar.show { top: 0; }

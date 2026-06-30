@@ -1,0 +1,10 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.mob-screen { height: 100%; display: flex; }
+.mob-screen h2 { margin-bottom: 6px; }
+.mob-screen p { font-size: 13px; color: #6b7280; }
+.onboard-dots { display: flex; justify-content: center; gap: 6px; }
+.od { width: 8px; height: 8px; border-radius: 50%; background: #e5e7eb; }
+.od.active { background: var(--accent); width: 20px; border-radius: 4px; }

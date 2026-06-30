@@ -1,0 +1,8 @@
+:root { --blob-color: #ec4899; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fdf2f8; }
+.morph-blob { width: 140px; height: 140px; background: var(--blob-color); animation: morph 6s ease-in-out infinite; }
+@keyframes morph {
+  0%, 100% { border-radius: 42% 58% 65% 35% / 45% 45% 55% 55%; }
+  50% { border-radius: 58% 42% 35% 65% / 55% 35% 65% 45%; }
+}

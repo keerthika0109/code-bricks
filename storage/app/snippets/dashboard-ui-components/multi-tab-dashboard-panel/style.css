@@ -1,0 +1,8 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.panel-tabs-widget { width: 280px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; overflow: hidden; }
+.ptw-tabs { display: flex; border-bottom: 1px solid #f3f4f6; }
+.ptw-tab { flex: 1; padding: 10px; border: none; background: none; font-size: 12px; font-weight: 600; color: #9ca3af; cursor: pointer; }
+.ptw-tab.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+.ptw-body { padding: 16px; font-size: 12px; color: #6b7280; }

@@ -1,0 +1,6 @@
+:root { --fill-color: #3b82f6; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.progress-btn { position: relative; overflow: hidden; padding: 14px 36px; font-size: 16px; font-weight: 600; color: #111827; background: #e5e7eb; border: none; border-radius: 8px; cursor: pointer; }
+.fill { position: absolute; inset: 0; width: 0%; background: var(--fill-color); transition: width 1.5s linear; z-index: 0; }
+.label { position: relative; z-index: 1; mix-blend-mode: difference; color: white; }

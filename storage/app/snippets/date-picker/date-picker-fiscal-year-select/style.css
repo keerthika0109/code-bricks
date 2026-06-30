@@ -1,0 +1,6 @@
+:root { --accent: #be123c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.select-dp { display: flex; gap: 8px; }
+.select-dp select { padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 13px; }
+.select-dp select:focus { border-color: var(--accent); outline: none; }

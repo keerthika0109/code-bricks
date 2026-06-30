@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.rotate-icon-btn { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #e5e7eb; background: white; cursor: pointer; font-size: 20px; }
+body.dark .rotate-icon-btn { background: #1e293b; border-color: #334155; }
+#rotateIconInner { display: inline-block; transition: transform 0.4s ease; }
+.rotate-icon-btn.spun #rotateIconInner { transform: rotate(360deg); }

@@ -1,0 +1,5 @@
+:root { --btn-bg: #16a34a; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.confirm-btn { padding: 14px 36px; font-size: 16px; font-weight: 600; color: white; background: var(--btn-bg); border: none; border-radius: 8px; cursor: pointer; min-width: 160px; transition: background 0.2s ease; }
+.confirm-btn.confirmed { background: #15803d; }

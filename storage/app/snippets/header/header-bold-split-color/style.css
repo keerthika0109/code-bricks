@@ -1,0 +1,7 @@
+:root { --left-color: #111827; --right-color: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-split-wrap { display: flex; }
+.hd-split-left { background: var(--left-color); color: white; padding: 18px 30px; font-weight: 800; }
+.hd-split-right { flex: 1; background: var(--right-color); display: flex; align-items: center; justify-content: flex-end; gap: 20px; padding: 0 30px; }
+.hd-split-right a { color: white; text-decoration: none; font-size: 14px; }

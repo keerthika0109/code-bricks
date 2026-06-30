@@ -1,0 +1,7 @@
+:root { --accent: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; margin: 0; background: #f8fafc; }
+.dash-sidebar { width: 200px; background: white; border-right: 1px solid #e5e7eb; padding: 20px 14px; height: 300px; }
+.dash-logo { font-weight: 800; margin-bottom: 20px; padding: 0 8px; }
+.dash-link { display: block; padding: 10px 12px; border-radius: 8px; color: #4b5563; text-decoration: none; font-size: 13px; margin-bottom: 4px; }
+.dash-link.active { background: #eef2ff; color: var(--accent); font-weight: 600; }

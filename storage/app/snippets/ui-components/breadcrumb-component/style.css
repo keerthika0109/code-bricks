@@ -1,0 +1,7 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb span { color: #9ca3af; }
+.breadcrumb .current { color: #111827; font-weight: 600; }

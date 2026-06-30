@@ -1,0 +1,9 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.thumbs-form { width: 280px; padding: 24px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; text-align: center; }
+.thumbs-form h3 { margin-bottom: 14px; font-size: 15px; }
+.thumbs-row { display: flex; justify-content: center; gap: 14px; margin-bottom: 10px; }
+.thumb-btn { font-size: 26px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 50%; width: 56px; height: 56px; cursor: pointer; transition: transform 0.15s ease; }
+.thumb-btn.active { transform: scale(1.15); border-color: var(--accent); }
+#thumbsMsg { font-size: 12px; color: var(--accent); font-weight: 600; }

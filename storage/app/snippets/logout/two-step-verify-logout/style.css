@@ -1,0 +1,8 @@
+:root { --accent: #b91c1c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fef2f2; }
+.tc-card { width: 300px; padding: 28px; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.tc-card h2 { font-size: 15px; margin-bottom: 14px; }
+.tc-card input { width: 100%; padding: 10px; margin-bottom: 14px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.tc-btn { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.tc-btn:disabled { background: #fca5a5; cursor: not-allowed; }

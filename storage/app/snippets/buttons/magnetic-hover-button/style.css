@@ -1,0 +1,4 @@
+:root { --btn-bg: #10b981; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f8fafc; font-family: system-ui, sans-serif; }
+.magnetic-btn { padding: 18px 46px; font-size: 16px; font-weight: 600; color: white; background: var(--btn-bg); border: none; border-radius: 50px; cursor: pointer; transition: transform 0.15s ease-out; }

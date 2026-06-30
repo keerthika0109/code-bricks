@@ -1,0 +1,11 @@
+:root { --accent: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#mdOpen10 { padding: 11px 22px; background: var(--accent); color: white; border: none; border-radius: 8px; cursor: pointer; }
+.md-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.tab-md-box { position: relative; width: 320px; padding: 24px; background: white; border-radius: 14px; }
+.md-close-x { position: absolute; top: 14px; right: 16px; background: none; border: none; font-size: 16px; cursor: pointer; }
+.tab-md-tabs { display: flex; gap: 8px; margin-bottom: 14px; border-bottom: 1px solid #e5e7eb; }
+.tab-md-tab { padding: 8px 4px; background: none; border: none; font-weight: 600; color: #9ca3af; cursor: pointer; border-bottom: 2px solid transparent; }
+.tab-md-tab.active { color: var(--accent); border-color: var(--accent); }
+.tab-md-pane { font-size: 13px; color: #4b5563; }

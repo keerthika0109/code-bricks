@@ -1,0 +1,7 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn26 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-expand-toast { position: fixed; bottom: 24px; right: 24px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); width: 220px; overflow: hidden; }
+.nt-expand-header { padding: 12px 16px; font-size: 13px; font-weight: 600; color: var(--accent); cursor: pointer; display: flex; justify-content: space-between; }
+.nt-expand-body { padding: 0 16px 12px; font-size: 11px; color: #6b7280; }

@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.glass-dp { width: 280px; padding: 18px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 14px; backdrop-filter: blur(10px); color: white; }
+.cal-header { text-align: center; font-weight: 700; margin-bottom: 12px; }
+.glass-dp-grid { display: flex; justify-content: center; gap: 8px; font-size: 13px; }
+.glass-dp-grid span { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 6px; }
+.glass-sel { background: rgba(255,255,255,0.3); font-weight: 700; }

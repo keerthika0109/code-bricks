@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-min-wrap { text-align: center; padding: 30px; border-top: 1px solid #e5e7eb; }
+.ft-min-logo { font-weight: 800; margin-bottom: 12px; }
+.ft-min-links { display: flex; justify-content: center; gap: 16px; margin-bottom: 12px; }
+.ft-min-links a { color: #6b7280; text-decoration: none; font-size: 13px; }
+.ft-min-wrap p { font-size: 12px; color: #9ca3af; }

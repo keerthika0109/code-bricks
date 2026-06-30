@@ -1,0 +1,5 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.bell-btn { position: relative; width: 46px; height: 46px; border-radius: 50%; border: 1px solid #e5e7eb; background: white; cursor: pointer; color: #4b5563; }
+.bell-count { position: absolute; top: 2px; right: 2px; background: var(--accent); color: white; font-size: 10px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; }

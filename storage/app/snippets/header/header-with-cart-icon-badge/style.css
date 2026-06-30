@@ -1,0 +1,9 @@
+:root { --accent: #ea580c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-cart-wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-cart-wrap nav { display: flex; align-items: center; gap: 18px; }
+.hd-cart-wrap nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-cart-btn { position: relative; border: none; background: none; font-size: 18px; cursor: pointer; }
+.hd-cart-btn span { position: absolute; top: -6px; right: -8px; background: var(--accent); color: white; font-size: 9px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }

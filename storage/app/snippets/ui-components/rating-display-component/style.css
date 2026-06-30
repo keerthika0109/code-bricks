@@ -1,0 +1,7 @@
+:root { --star-color: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.rating-display { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.stars-display { color: var(--star-color); font-size: 18px; }
+.rating-num { font-weight: 700; }
+.rating-count { color: #9ca3af; font-size: 12px; }

@@ -1,0 +1,12 @@
+:root { --night-color: #1e293b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; transition: background 0.3s ease; }
+body.dark { background: #0f172a; }
+.stars-toggle { position: relative; display: inline-block; width: 56px; height: 28px; }
+.stars-toggle input { opacity: 0; }
+.stars-slider { position: absolute; inset: 0; background: #e5e7eb; border-radius: 30px; cursor: pointer; transition: 0.3s; overflow: hidden; }
+.stars-slider::before { content: ''; position: absolute; width: 22px; height: 22px; left: 3px; top: 3px; background: white; border-radius: 50%; transition: 0.3s; z-index: 1; }
+.star { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; opacity: 0; transition: opacity 0.3s ease; }
+input:checked ~ .stars-slider { background: var(--night-color); }
+input:checked ~ .stars-slider::before { transform: translateX(28px); }
+input:checked ~ .stars-slider .star { opacity: 1; }

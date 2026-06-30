@@ -1,0 +1,7 @@
+:root { --icon-color: #ef4444; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.io-btn { position: relative; width: 44px; height: 44px; border-radius: 50%; border: 1px solid #fee2e2; background: #fef2f2; color: var(--icon-color); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.io-btn::after { content: attr(data-tooltip); position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%); background: #111827; color: white; font-size: 12px; padding: 5px 9px; border-radius: 5px; white-space: nowrap; opacity: 0; transition: opacity 0.2s ease; }
+.io-btn:hover::after { opacity: 1; }
+.io-btn:hover { background: var(--icon-color); color: white; }

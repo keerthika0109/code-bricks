@@ -1,0 +1,6 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.icon-input { display: flex; align-items: center; gap: 8px; width: 260px; padding: 11px 14px; border: 1px solid #e5e7eb; border-radius: 8px; color: #9ca3af; }
+.icon-input input { border: none; outline: none; flex: 1; }
+.icon-input:has(input:focus) { border-color: var(--accent); }

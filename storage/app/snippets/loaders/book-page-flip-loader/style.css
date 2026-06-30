@@ -1,0 +1,7 @@
+:root { --page-color: #d97706; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; perspective: 200px; }
+.book-ld { display: flex; }
+.page { width: 20px; height: 28px; background: var(--page-color); border-radius: 2px; margin: 0 1px; animation: page-flip 1.2s ease-in-out infinite; transform-origin: left; }
+.page2 { animation-delay: 0.6s; }
+@keyframes page-flip { 0%, 100% { transform: rotateY(0deg); } 50% { transform: rotateY(180deg); } }

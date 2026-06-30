@@ -1,0 +1,9 @@
+:root { --accent: #db2777; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cf-news-form { width: 310px; padding: 26px; background: white; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.cf-news-form h2 { margin-bottom: 14px; }
+.cf-news-form input[type="text"], .cf-news-form input[type="email"], .cf-news-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-family: inherit; }
+.cf-news-form textarea { height: 70px; resize: none; }
+.cf-news-check { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #4b5563; margin-bottom: 14px; }
+.cf-news-form button { width: 100%; padding: 11px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

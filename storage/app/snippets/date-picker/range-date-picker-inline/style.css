@@ -1,0 +1,8 @@
+:root { --accent: #0ea5e9; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.range-dp { display: flex; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+.range-dp-field { padding: 10px 16px; }
+.range-dp-field label { display: block; font-size: 10px; color: #9ca3af; margin-bottom: 4px; }
+.range-dp-field input { border: none; outline: none; font-size: 13px; }
+.range-dp-divider { width: 1px; background: #e5e7eb; }

@@ -1,0 +1,9 @@
+:root { --event-color: #6366f1; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.week-cal { width: 320px; padding: 14px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; font-size: 11px; }
+.week-cal-header, .week-cal-row { display: grid; grid-template-columns: 50px repeat(3, 1fr); gap: 4px; }
+.week-cal-header span { font-weight: 700; text-align: center; padding-bottom: 6px; }
+.week-cal-row { margin-bottom: 4px; }
+.week-time { color: #9ca3af; }
+.week-event { background: var(--event-color); color: white; border-radius: 4px; padding: 4px; text-align: center; }

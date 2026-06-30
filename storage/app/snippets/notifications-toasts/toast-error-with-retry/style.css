@@ -1,0 +1,6 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#ntBtn28 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.nt-retry-toast { position: fixed; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 14px; background: var(--accent); color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; }
+.nt-retry-toast button { background: white; color: var(--accent); border: none; padding: 5px 12px; border-radius: 6px; font-weight: 700; cursor: pointer; font-size: 11px; }

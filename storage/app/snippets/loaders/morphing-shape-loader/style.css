@@ -1,0 +1,5 @@
+:root { --shape-color: #ec4899; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.morph-ld { width: 44px; height: 44px; background: var(--shape-color); animation: morph-shape 1.6s ease-in-out infinite; }
+@keyframes morph-shape { 0%, 100% { border-radius: 0%; transform: rotate(0deg); } 50% { border-radius: 50%; transform: rotate(180deg); } }

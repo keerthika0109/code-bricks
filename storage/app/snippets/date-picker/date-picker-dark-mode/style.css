@@ -1,0 +1,8 @@
+:root { --accent: #818cf8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0; }
+.dark-dp { position: relative; }
+#darkDpInput { padding: 11px 14px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; color: #e2e8f0; cursor: pointer; width: 180px; }
+.dark-dp-grid { position: absolute; top: 105%; left: 0; background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 10px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; font-size: 11px; }
+.dark-dp-grid div { padding: 6px; text-align: center; color: #cbd5e1; cursor: pointer; border-radius: 4px; }
+.dark-dp-grid div:hover { background: var(--accent); color: white; }

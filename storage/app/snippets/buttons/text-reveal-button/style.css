@@ -1,0 +1,7 @@
+:root { --btn-bg: #0ea5e9; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#fff; font-family: system-ui, sans-serif; }
+.reveal-btn { position: relative; overflow: hidden; height: 50px; padding: 0 36px; font-size: 16px; font-weight: 700; color: white; background: var(--btn-bg); border: none; border-radius: 8px; cursor: pointer; }
+.reveal-inner { display: flex; flex-direction: column; transition: transform 0.3s ease; }
+.line { height: 50px; display: flex; align-items: center; justify-content: center; }
+.reveal-btn:hover .reveal-inner { transform: translateY(-50px); }

@@ -1,0 +1,8 @@
+:root { --accent: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-cookie-wrap { text-align: center; padding: 26px; border-top: 1px solid #e5e7eb; }
+.ft-cookie-wrap nav { display: flex; justify-content: center; gap: 16px; margin-bottom: 12px; }
+.ft-cookie-wrap nav a { color: #6b7280; text-decoration: none; font-size: 12px; }
+#ftCookieLink14 { color: var(--accent); font-weight: 600; }
+.ft-cookie-wrap p { font-size: 11px; color: #9ca3af; }

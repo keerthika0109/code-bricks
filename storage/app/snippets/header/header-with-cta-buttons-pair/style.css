@@ -1,0 +1,9 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-dual-wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-dual-wrap nav { display: flex; align-items: center; gap: 14px; }
+.hd-dual-wrap nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-login-btn { background: none; border: none; color: #4b5563; font-size: 14px; cursor: pointer; }
+.hd-signup-btn { background: var(--accent); color: white; border: none; padding: 9px 18px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 13px; }

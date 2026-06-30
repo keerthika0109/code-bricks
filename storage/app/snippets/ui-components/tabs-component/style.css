@@ -1,0 +1,7 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.ui-tabs { position: relative; display: flex; border-bottom: 1px solid #e5e7eb; width: 300px; }
+.ui-tab { flex: 1; padding: 10px; background: none; border: none; font-weight: 600; color: #9ca3af; cursor: pointer; }
+.ui-tab.active { color: var(--accent); }
+.ui-tab-underline { position: absolute; bottom: 0; left: 0; width: 33.33%; height: 2px; background: var(--accent); transition: transform 0.3s ease; }

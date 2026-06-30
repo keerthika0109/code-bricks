@@ -1,0 +1,5 @@
+:root { --accent: #0d9488; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.subtitle-search-label { font-size: 13px; color: #6b7280; font-weight: 600; }
+.subtitle-search input { width: 340px; padding: 14px 18px; border: 2px solid var(--accent); border-radius: 10px; outline: none; }

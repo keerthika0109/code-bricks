@@ -1,0 +1,7 @@
+:root { --accent: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-hotline-band { background: var(--accent); color: white; text-align: center; padding: 10px; font-size: 13px; font-weight: 600; }
+.ft-hotline-wrap nav { display: flex; justify-content: center; gap: 16px; padding: 16px 0 8px; }
+.ft-hotline-wrap nav a { color: #6b7280; text-decoration: none; font-size: 12px; }
+.ft-hotline-wrap p { text-align: center; font-size: 11px; color: #9ca3af; padding-bottom: 16px; }

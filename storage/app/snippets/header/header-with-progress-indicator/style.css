@@ -1,0 +1,7 @@
+:root { --accent: #ea580c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.hd-prog-wrap { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 16px 30px; background: white; border-bottom: 1px solid #e5e7eb; }
+.hd-logo { font-weight: 800; color: var(--accent); }
+.hd-prog-wrap nav a { text-decoration: none; color: #4b5563; font-size: 14px; }
+.hd-prog-bar { position: absolute; bottom: -2px; left: 0; height: 2px; width: 0%; background: var(--accent); transition: width 0.1s linear; }

@@ -1,0 +1,6 @@
+:root { --accent: #0f766e; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.nt-pos-buttons { display: flex; gap: 8px; }
+.nt-pos-buttons button { padding: 9px 16px; border: 1px solid #e5e7eb; background: white; border-radius: 8px; cursor: pointer; font-size: 12px; }
+.nt-pos-toast { position: fixed; background: var(--accent); color: white; padding: 12px 18px; border-radius: 8px; font-size: 13px; }

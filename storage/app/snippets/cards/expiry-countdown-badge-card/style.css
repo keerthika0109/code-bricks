@@ -1,0 +1,9 @@
+:root { --urgent-color: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.stock-card { position: relative; width: 220px; padding: 20px; background: white; border: 2px solid var(--urgent-color); border-radius: 14px; text-align: center; animation: urgent-pulse 2s infinite; }
+@keyframes urgent-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.3); } 50% { box-shadow: 0 0 0 8px rgba(220,38,38,0); } }
+.stock-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--urgent-color); color: white; font-size: 11px; padding: 4px 12px; border-radius: 16px; font-weight: 700; white-space: nowrap; }
+.stock-img { font-size: 40px; margin: 14px 0 10px; }
+.stock-card h3 { font-size: 14px; margin-bottom: 4px; }
+.stock-price { font-weight: 700; color: var(--urgent-color); }

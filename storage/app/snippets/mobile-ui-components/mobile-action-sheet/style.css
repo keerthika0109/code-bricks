@@ -1,0 +1,9 @@
+:root { --danger: #dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #f3f4f6; }
+.mob-screen { display: flex; height: 100%; }
+.action-sheet { width: 100%; background: white; border-radius: 14px 14px 0 0; padding: 10px; }
+.as-opt { width: 100%; padding: 14px; border: none; background: white; border-bottom: 1px solid #f3f4f6; font-size: 14px; cursor: pointer; }
+.as-opt.danger { color: var(--danger); }
+.as-cancel { width: 100%; padding: 14px; margin-top: 8px; border: none; background: white; border-radius: 10px; font-weight: 700; cursor: pointer; }

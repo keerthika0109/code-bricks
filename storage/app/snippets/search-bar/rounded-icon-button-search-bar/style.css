@@ -1,0 +1,6 @@
+:root { --accent: #be185d; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.overlap-search { position: relative; width: 280px; }
+.overlap-search input { width: 100%; padding: 13px 50px 13px 16px; border: 1px solid #e5e7eb; border-radius: 10px; outline: none; }
+.overlap-search button { position: absolute; right: -2px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: white; border: none; cursor: pointer; }

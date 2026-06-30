@@ -1,0 +1,8 @@
+:root { --accent: #16a34a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.csat-widget { width: 220px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; text-align: center; }
+.csat-widget h4 { margin-bottom: 10px; font-size: 13px; }
+.csat-score { font-size: 32px; font-weight: 800; color: var(--accent); margin-bottom: 10px; }
+.csat-faces { display: flex; justify-content: center; gap: 8px; font-size: 18px; }
+.csat-faces .dim { opacity: 0.3; }

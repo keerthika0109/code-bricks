@@ -1,0 +1,6 @@
+:root { --accent: #1d4ed8; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; font-size: 15px; }
+#itTrigger { color: var(--accent); text-decoration: none; font-weight: 600; }
+.yes { color: #dc2626; font-weight: 700; }
+#itNo { color: #6b7280; }

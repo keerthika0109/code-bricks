@@ -1,0 +1,7 @@
+:root { --accent: #2563eb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.load-search { position: relative; width: 280px; }
+.load-search input { width: 100%; padding: 12px 40px 12px 16px; border: 1px solid #e5e7eb; border-radius: 8px; outline: none; }
+.load-search-spinner { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; border: 2px solid #e5e7eb; border-top-color: var(--accent); border-radius: 50%; animation: spin-sb 0.7s linear infinite; }
+@keyframes spin-sb { to { transform: translateY(-50%) rotate(360deg); } }

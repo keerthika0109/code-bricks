@@ -1,0 +1,9 @@
+:root { --bg-color: #4f46e5; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+#mdOpen7 { padding: 11px 22px; background: #111827; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.md-fullscreen { position: fixed; inset: 0; background: var(--bg-color); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.md-fullscreen h1 { font-size: 32px; margin-bottom: 10px; }
+.md-fullscreen p { opacity: 0.85; margin-bottom: 26px; }
+.md-cta { padding: 13px 32px; background: white; color: var(--bg-color); border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.md-close-x { position: absolute; top: 20px; right: 24px; background: none; border: none; color: white; font-size: 22px; cursor: pointer; }

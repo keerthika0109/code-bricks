@@ -1,0 +1,6 @@
+:root { --accent: #f59e0b; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-rating-wrap { text-align: center; padding: 26px; border-top: 1px solid #e5e7eb; }
+.ft-rating-badge { display: inline-block; background: #fffbeb; color: var(--accent); padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+.ft-rating-wrap p { font-size: 11px; color: #9ca3af; }

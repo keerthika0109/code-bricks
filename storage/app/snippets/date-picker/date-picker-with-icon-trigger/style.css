@@ -1,0 +1,6 @@
+:root { --accent: #0891b2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.icon-trigger-dp { display: flex; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; width: 200px; }
+.icon-trigger-dp input { flex: 1; border: none; outline: none; padding: 0 12px; }
+.icon-trigger-dp button { border: none; background: var(--accent); cursor: pointer; padding: 0 14px; font-size: 14px; }

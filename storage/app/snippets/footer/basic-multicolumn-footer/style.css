@@ -1,0 +1,8 @@
+:root { --bg-color: #111827; --text-color: #9ca3af; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; margin: 0; }
+.ft-wrap { background: var(--bg-color); color: var(--text-color); padding: 40px 30px 20px; }
+.ft-cols { display: flex; gap: 40px; margin-bottom: 30px; }
+.ft-cols h4 { color: white; font-size: 13px; margin-bottom: 12px; }
+.ft-cols a { display: block; color: var(--text-color); text-decoration: none; font-size: 13px; padding: 4px 0; }
+.ft-bottom { border-top: 1px solid #1f2937; padding-top: 16px; font-size: 12px; }

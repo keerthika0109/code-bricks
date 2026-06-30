@@ -1,0 +1,6 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; }
+.mob-wrap { width: 320px; height: 480px; margin: 20px auto; border: 1px solid #e5e7eb; border-radius: 20px; overflow: hidden; background: #fff; }
+.status-bar { display: flex; justify-content: space-between; padding: 8px 18px; font-size: 12px; font-weight: 700; }
+.status-icons { font-size: 10px; }
+.mob-screen { padding: 20px; color: #9ca3af; text-align: center; }

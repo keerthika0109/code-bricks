@@ -1,0 +1,7 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.md-thumb { width: 200px; height: 130px; background: #f3f4f6; border-radius: 10px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 13px; }
+.md-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center; }
+.md-img-box { position: relative; }
+.md-fullimg { width: 400px; height: 280px; background: linear-gradient(135deg, #6366f1, #ec4899); border-radius: 8px; }
+.md-close { position: absolute; top: -40px; right: 0; background: none; border: none; color: white; font-size: 22px; cursor: pointer; }

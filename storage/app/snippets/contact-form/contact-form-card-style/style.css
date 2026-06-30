@@ -1,0 +1,9 @@
+:root { --g1: #ec4899; --g2: #8b5cf6; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.cf-card { width: 300px; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cf-card-header { background: linear-gradient(135deg, var(--g1), var(--g2)); color: white; padding: 20px; font-weight: 700; }
+.cf-card-body { padding: 22px; }
+.cf-card-body input, .cf-card-body textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #e5e7eb; border-radius: 8px; font-family: inherit; }
+.cf-card-body textarea { height: 70px; resize: none; }
+.cf-card-body button { width: 100%; padding: 11px; background: var(--g2); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }

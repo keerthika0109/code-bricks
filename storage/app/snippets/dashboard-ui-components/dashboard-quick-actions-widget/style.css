@@ -1,0 +1,8 @@
+:root { --accent: #7c3aed; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff; }
+.quick-actions-widget { width: 280px; padding: 20px; background: white; border: 1px solid #e5e7eb; border-radius: 14px; }
+.quick-actions-widget h4 { margin-bottom: 14px; font-size: 13px; }
+.qa-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.qa-grid button { padding: 12px; border: 1px solid #e5e7eb; border-radius: 8px; background: white; font-size: 11px; cursor: pointer; }
+.qa-grid button:hover { border-color: var(--accent); color: var(--accent); }

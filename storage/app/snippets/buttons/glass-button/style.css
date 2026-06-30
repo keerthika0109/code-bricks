@@ -1,0 +1,5 @@
+:root { --btn-text: #ffffff; --btn-radius: 14px; }
+* { box-sizing: border-box; }
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background: linear-gradient(135deg,#667eea,#764ba2); font-family: system-ui, sans-serif; }
+.glass-btn { padding: 14px 38px; font-size: 16px; font-weight: 600; color: var(--btn-text); background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: var(--btn-radius); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); cursor: pointer; transition: background 0.3s ease; }
+.glass-btn:hover { background: rgba(255,255,255,0.25); }

@@ -1,0 +1,7 @@
+:root { --primary-color: #334155; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; min-height: 100vh; display: flex; align-items: center; justify-content: center; background-color: #f8fafc; background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px); background-size: 20px 20px; }
+.dot-card { width: 320px; padding: 32px; background: white; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.dot-card h2 { margin-bottom: 18px; }
+.dot-card input { width: 100%; padding: 11px; margin-bottom: 12px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.dot-card button { width: 100%; padding: 11px; background: var(--primary-color); color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
