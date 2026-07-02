@@ -1,0 +1,75 @@
+# render.yaml — one-click Render deployment for CodeBricks Laravel API
+# Docs: https://render.com/docs/infrastructure-as-code
+
+services:
+  - type: web
+    name: codebricks-api
+    env: php
+    plan: free
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      php artisan config:cache
+      php artisan route:cache
+      php artisan view:cache
+      php artisan migrate --force
+      php artisan db:seed --force
+    startCommand: php artisan serve --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/sections
+    envVars:
+      - key: APP_NAME
+        value: CodeBricks
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        fromService:
+          type: web
+          name: codebricks-api
+          property: host
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        fromDatabase:
+          name: codebricks-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: codebricks-db
+          property: port
+      - key: DB_DATABASE
+        fromDatabase:
+          name: codebricks-db
+          property: database
+      - key: DB_USERNAME
+        fromDatabase:
+          name: codebricks-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: codebricks-db
+          property: password
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_TTL
+        value: 60
+      - key: JWT_REFRESH_TTL
+        value: 20160
+      - key: FILESYSTEM_DISK
+        value: local
+      - key: CACHE_STORE
+        value: database
+      - key: SESSION_DRIVER
+        value: database
+      - key: QUEUE_CONNECTION
+        value: database
+      - key: CORS_ALLOWED_ORIGINS
+        value: "*"   # ← replace with your Vercel URL after first deploy, e.g. https://codebricks.vercel.app
+
+databases:
+  - name: codebricks-db
+    plan: free
+    databaseName: codebricks
+    user: codebricks
