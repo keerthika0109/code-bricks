@@ -73,7 +73,6 @@ Route::prefix('v1')->group(function () {
     |----------------------------------------------------------------
     */
     Route::post('suggestions', [SuggestionController::class, 'store']); // POST /api/v1/suggestions
-    Route::post('verify-otp', [AuthController::class, 'verifyOtp']); // POST /api/v1/auth/verify-otp
 
     /*
     |----------------------------------------------------------------
@@ -92,8 +91,7 @@ Route::prefix('v1')->group(function () {
 
         Route::post('reviews', [ReviewController::class, 'store']); // POST /api/v1/reviews
         Route::get('reviews/mine', [ReviewController::class, 'mine']); // GET /api/v1/reviews/mine
-
-        
+        Route::post('verify-otp', [AuthController::class, 'verifyOtp']); // POST /api/v1/auth/verify-otp
     });
 
     /*
