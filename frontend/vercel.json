@@ -3,10 +3,12 @@
         {
             "source": "/api/:path*",
             "destination": "https://code-bricks.vercel.app/api/:path*"
-        },
+        }
+    ],
+    "routes": [
         {
-            "source": "/((?!api).*)",
-            "destination": "/index.html"
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
