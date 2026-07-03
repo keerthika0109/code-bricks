@@ -17,8 +17,50 @@ class AuthService implements AuthInterface
         protected UserContract $userRepository
     ) {}
 
-    public function register(array $data): array
+    /**
+     * Step 1 of register — validate data, send OTP (don't create user yet)
+     */
+    public function sendRegisterOtp(array $data): array
     {
+        $email = $data['email'];
+
+        // Generate OTP and store with the pending registration data
+        $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
+
+        DB::table('login_otps')->where('email', $email)->delete();
+        DB::table('login_otps')->insert([
+            'email'      => $email,
+            'otp'        => Hash::make($otp),
+            'payload'    => json_encode($data), // store name/email/password temporarily
+            'expires_at' => now()->addMinutes(10),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        Mail::to($email)->send(new LoginOtpMail($otp));
+
+        return ['otp_sent' => true, 'email' => $email];
+    }
+
+    /**
+     * Step 2 of register — verify OTP, create user, return JWT
+     */
+    public function verifyRegisterOtp(string $email, string $otp): array
+    {
+        $record = DB::table('login_otps')
+            ->where('email', $email)
+            ->where('expires_at', '>', now())
+            ->latest('created_at')
+            ->first();
+
+        if (!$record || !Hash::check($otp, $record->otp)) {
+            throw new UnauthorizedException('Invalid or expired OTP.');
+        }
+
+        $data = json_decode($record->payload, true);
+
+        DB::table('login_otps')->where('email', $email)->delete();
+
         $user = $this->userRepository->create([
             'name'          => $data['name'],
             'email'         => $data['email'],
@@ -33,63 +75,23 @@ class AuthService implements AuthInterface
     }
 
     /**
-     * Step 1 — verify credentials, send OTP.
-     * Returns ['otp_sent' => true, 'email' => $email]
+     * Simple login — no OTP
      */
-    public function initiateLogin(string $email, string $password): array
+    public function login(string $email, string $password): array
     {
         $credentials = ['email' => $email, 'password' => $password];
 
-        // Attempt just to validate credentials (no token yet)
-        if (!JWTAuth::attempt($credentials)) {
+        if (!$token = JWTAuth::attempt($credentials)) {
             throw new UnauthorizedException('Invalid email or password.');
         }
 
         /** @var User $user */
         $user = JWTAuth::user();
-        JWTAuth::invalidate(JWTAuth::getToken()); // discard the token — not logged in yet
 
         if (!$user->is_active) {
             throw new UnauthorizedException('Your account has been deactivated. Contact the administrator.');
         }
 
-        // Generate 6-digit OTP and store it
-        $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
-
-        DB::table('login_otps')->where('user_id', $user->id)->delete(); // clear old OTPs
-        DB::table('login_otps')->insert([
-            'user_id'    => $user->id,
-            'otp'        => Hash::make($otp),
-            'expires_at' => now()->addMinutes(10),
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
-
-        Mail::to($user->email)->send(new LoginOtpMail($otp));
-
-        return ['otp_sent' => true, 'email' => $email];
-    }
-
-    /**
-     * Step 2 — verify OTP and issue JWT.
-     */
-    public function verifyOtp(string $email, string $otp): array
-    {
-        $user = User::where('email', $email)->firstOrFail();
-
-        $record = DB::table('login_otps')
-            ->where('user_id', $user->id)
-            ->where('expires_at', '>', now())
-            ->latest('created_at')
-            ->first();
-
-        if (!$record || !Hash::check($otp, $record->otp)) {
-            throw new UnauthorizedException('Invalid or expired OTP.');
-        }
-
-        DB::table('login_otps')->where('user_id', $user->id)->delete();
-
-        $token = JWTAuth::fromUser($user);
         $this->userRepository->touchLastLogin($user->id);
         $user->refresh();
 
@@ -104,11 +106,7 @@ class AuthService implements AuthInterface
     public function refresh(): array
     {
         $token = JWTAuth::refresh(JWTAuth::getToken());
-
-        return [
-            'token'      => $token,
-            'expires_in' => (int) config('jwt.ttl') * 60,
-        ];
+        return ['token' => $token, 'expires_in' => (int) config('jwt.ttl') * 60];
     }
 
     public function me(): User

@@ -10,16 +10,11 @@ export function AuthProvider({ children }) {
   });
   const [loading, setLoading] = useState(true);
 
-  // On first load, if a token exists, verify it's still valid by fetching /auth/me.
   useEffect(() => {
     const token = localStorage.getItem('codebricks_token');
-    if (!token) {
-      setLoading(false);
-      return;
-    }
+    if (!token) { setLoading(false); return; }
 
-    authApi
-      .me()
+    authApi.me()
       .then((res) => {
         setUser(res.data);
         localStorage.setItem('codebricks_user', JSON.stringify(res.data));
@@ -38,24 +33,27 @@ export function AuthProvider({ children }) {
     setUser(data.user);
   };
 
+  // Simple login — email + password only
   const login = useCallback(async (email, password) => {
-    const res = await authApi.login({ email, otp });
+    const res = await authApi.login({ email, password });
     persistSession(res.data);
     return res.data.user;
   }, []);
 
+  // Register step 1 — send OTP
   const register = useCallback(async (name, email, password, password_confirmation) => {
-    const res = await authApi.register({ name, email, password, password_confirmation });
+    await authApi.register({ name, email, password, password_confirmation });
+  }, []);
+
+  // Register step 2 — verify OTP, create account
+  const verifyRegisterOtp = useCallback(async (email, otp) => {
+    const res = await authApi.verifyOtp({ email, otp });
     persistSession(res.data);
     return res.data.user;
   }, []);
 
   const logout = useCallback(async () => {
-    try {
-      await authApi.logout();
-    } catch {
-      // even if the API call fails (e.g. token already expired), clear locally
-    }
+    try { await authApi.logout(); } catch { }
     localStorage.removeItem('codebricks_token');
     localStorage.removeItem('codebricks_user');
     setUser(null);
@@ -64,7 +62,7 @@ export function AuthProvider({ children }) {
   const isSuperAdmin = user?.role === 'super_admin';
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, register, logout, isSuperAdmin, setUser }}>
+    <AuthContext.Provider value={{ user, loading, login, register, verifyRegisterOtp, logout, isSuperAdmin, setUser }}>
       {children}
     </AuthContext.Provider>
   );
