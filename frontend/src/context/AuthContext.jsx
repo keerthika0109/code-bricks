@@ -39,7 +39,7 @@ export function AuthProvider({ children }) {
   };
 
   const login = useCallback(async (email, password) => {
-    const res = await authApi.login({ email, password });
+    const res = await authApi.login({ email, otp });
     persistSession(res.data);
     return res.data.user;
   }, []);

@@ -14,7 +14,7 @@ interface AuthInterface
     /**
      * @return array{user: User, token: string, expires_in: int}
      */
-    public function login(string $email, string $password): array;
+    public function initiateLogin(string $email, string $password): array;
 
     public function logout(): void;
 
@@ -24,4 +24,6 @@ interface AuthInterface
     public function refresh(): array;
 
     public function me(): User;
+    
+    public function verifyOtp(string $email, string $otp): array;
 }
