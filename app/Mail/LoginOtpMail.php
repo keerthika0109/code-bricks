@@ -21,6 +21,8 @@ class LoginOtpMail extends Mailable
 
     public function content(): Content
     {
-        return new Content(view: 'emails.login_otp');
+        return new Content(
+            text: 'emails.login_otp_text', // plain text view
+        );
     }
 }
