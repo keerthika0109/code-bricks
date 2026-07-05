@@ -18,10 +18,19 @@ RUN mkdir -p storage/framework/views \
     storage/framework/sessions \
     storage/logs \
     bootstrap/cache \
-    && chmod -R 775 storage bootstrap/cache
+    && chmod -R 777 storage bootstrap/cache
+
+# Remove any stale cached config that may have been committed
+RUN rm -f bootstrap/cache/config.php \
+    bootstrap/cache/routes*.php \
+    bootstrap/cache/services.php \
+    bootstrap/cache/packages.php
 
 EXPOSE 10000
 
-CMD php artisan migrate --force \
+CMD php artisan config:clear \
+    && php artisan cache:clear \
+    && php artisan view:clear \
+    && php artisan migrate --force \
     && php artisan db:seed --force \
     && php artisan serve --host 0.0.0.0 --port $PORT
