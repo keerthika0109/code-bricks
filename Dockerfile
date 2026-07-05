@@ -15,9 +15,17 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 
-RUN chmod -R 775 storage bootstrap/cache
+RUN mkdir -p storage/framework/views \
+    storage/framework/cache \
+    storage/framework/sessions \
+    storage/logs \
+    bootstrap/cache \
+    && chmod -R 775 storage bootstrap/cache
 
 EXPOSE 10000
+
+RUN mkdir -p storage/framework/views storage/framework/cache storage/framework/sessions \
+    && chmod -R 775 storage bootstrap/cache
 
 CMD php artisan config:cache \
     && php artisan migrate --force \
