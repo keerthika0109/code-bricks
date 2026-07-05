@@ -2,13 +2,11 @@
     "rewrites": [
         {
             "source": "/api/:path*",
-            "destination": "https://code-bricks.vercel.app/api/:path*"
-        }
-    ],
-    "routes": [
+            "destination": "https://code-bricks.onrender.com/api/:path*"
+        },
         {
-            "src": "/(.*)",
-            "dest": "/index.html"
+            "source": "/((?!api|assets|favicon).*)",
+            "destination": "/index.html"
         }
     ]
 }
