@@ -42,6 +42,7 @@ Route::prefix('v1')->group(function () {
     Route::prefix('auth')->group(function () {
         Route::post('register', [AuthController::class, 'register']); // POST /api/v1/auth/register
         Route::post('login', [AuthController::class, 'login']);       // POST /api/v1/auth/login
+        Route::post('verify-otp', [AuthController::class, 'verifyOtp']);
 
         Route::middleware('auth:api')->group(function () {
             Route::post('logout', [AuthController::class, 'logout']);   // POST /api/v1/auth/logout
@@ -73,8 +74,6 @@ Route::prefix('v1')->group(function () {
     |----------------------------------------------------------------
     */
     Route::post('suggestions', [SuggestionController::class, 'store']); // POST /api/v1/suggestions
-    Route::post('verify-otp', [AuthController::class, 'verifyOtp']); // DELETE THIS LINE
-
     /*
     |----------------------------------------------------------------
     | AUTHENTICATED — any logged-in user (role: user OR super_admin)

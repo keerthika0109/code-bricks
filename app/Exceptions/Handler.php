@@ -140,7 +140,14 @@ class Handler extends ExceptionHandler
         return $this->error(
             $debug ? $e->getMessage() : 'Internal server error. Please try again later.',
             500,
-            $debug ? ['trace' => collect($e->getTrace())->take(5)->toArray(), 'file' => $e->getFile(), 'line' => $e->getLine()] : null,
+                $debug ? [
+            'trace' => collect($e->getTrace())->take(5)->map(function($frame) {
+                unset($frame['args']);
+                return $frame;
+            })->toArray(),
+            'file' => $e->getFile(),
+            'line' => $e->getLine()
+        ] : null,
             'SERVER_ERROR'
         );
     }
