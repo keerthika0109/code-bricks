@@ -24,22 +24,20 @@ class AuthService implements AuthInterface
     {
         $email = $data['email'];
 
-        // Generate OTP and store with the pending registration data
         $otp = str_pad(random_int(0, 999999), 6, '0', STR_PAD_LEFT);
 
         DB::table('login_otps')->where('email', $email)->delete();
         DB::table('login_otps')->insert([
             'email'      => $email,
             'otp'        => Hash::make($otp),
-            'payload'    => json_encode($data), // store name/email/password temporarily
+            'payload'    => json_encode($data),
             'expires_at' => now()->addMinutes(10),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
-        Mail::to($email)->send(new LoginOtpMail($otp));
-
-        return ['otp_sent' => true, 'email' => $email];
+        // No mail — return OTP directly in response
+        return ['otp_sent' => true, 'email' => $email, 'otp' => $otp];
     }
 
     /**

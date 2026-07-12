@@ -2,27 +2,34 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../components/common/Toast';
+import { authApi } from '../../api/auth';
 import Button from '../../components/common/Button';
 
 export default function Register() {
-  const { register, verifyRegisterOtp } = useAuth();
+  const { verifyRegisterOtp } = useAuth();
   const { showToast } = useToast();
   const navigate = useNavigate();
 
-  const [step, setStep] = useState('details'); // 'details' | 'otp'
+  const [step, setStep] = useState('details');
   const [form, setForm] = useState({ name: '', email: '', password: '', password_confirmation: '', otp: '' });
   const [errors, setErrors] = useState({});
+  const [showOtp, setShowOtp] = useState(null);
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-  // Step 1 — submit details, trigger OTP email
   const handleDetails = async (e) => {
     e.preventDefault();
     setErrors({});
     setLoading(true);
     try {
-      await register(form.name, form.email, form.password, form.password_confirmation);
-      showToast('OTP sent to your email!', 'success');
+      const res = await authApi.register({
+        name: form.name,
+        email: form.email,
+        password: form.password,
+        password_confirmation: form.password_confirmation
+      });
+      setShowOtp(res.data.data.otp);
+      showToast('OTP generated!', 'success');
       setStep('otp');
     } catch (err) {
       setErrors(err.errors || {});
@@ -32,7 +39,6 @@ export default function Register() {
     }
   };
 
-  // Step 2 — verify OTP, account created, redirect to /login
   const handleOtp = async (e) => {
     e.preventDefault();
     setErrors({});
@@ -74,7 +80,7 @@ export default function Register() {
             <form onSubmit={handleDetails} className="mt-6 space-y-4">
               <div>
                 <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">Full Name</label>
-                <input type="text" required value={form.name}
+                <input type="text" required autoComplete="name" value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
                   placeholder="Jane Doe" />
@@ -83,7 +89,7 @@ export default function Register() {
 
               <div>
                 <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-                <input type="email" required value={form.email}
+                <input type="email" required autoComplete="email" value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
                   className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
                   placeholder="you@example.com" />
@@ -94,7 +100,7 @@ export default function Register() {
                 <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
                 <div className="relative">
                   <input type={showPassword ? 'text' : 'password'} required minLength={8}
-                    value={form.password}
+                    autoComplete="new-password" value={form.password}
                     onChange={(e) => setForm({ ...form, password: e.target.value })}
                     className="w-full rounded-lg border border-gray-300 px-3 py-2 pr-10 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
                     placeholder="At least 8 characters" />
@@ -109,7 +115,7 @@ export default function Register() {
 
               <div>
                 <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">Confirm Password</label>
-                <input type="password" required value={form.password_confirmation}
+                <input type="password" required autoComplete="new-password" value={form.password_confirmation}
                   onChange={(e) => setForm({ ...form, password_confirmation: e.target.value })}
                   className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
                   placeholder="Re-enter your password" />
@@ -120,12 +126,22 @@ export default function Register() {
           </>
         ) : (
           <>
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Verify your email</h1>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Verify your account</h1>
             <p className="mt-1 text-sm text-gray-500">
-              We sent a 6-digit OTP to <strong>{form.email}</strong>. Enter it below to activate your account.
+              Use the OTP below to activate your account.
             </p>
 
-            <form onSubmit={handleOtp} className="mt-6 space-y-4">
+            {showOtp && (
+              <div className="mt-4 rounded-lg bg-yellow-50 border border-yellow-200 p-4 text-center dark:bg-yellow-900/20">
+                <p className="text-xs text-yellow-700 dark:text-yellow-400 mb-1">Your OTP code</p>
+                <p className="text-3xl font-bold tracking-widest text-yellow-800 dark:text-yellow-300">
+                  {showOtp}
+                </p>
+                <p className="text-xs text-yellow-600 mt-1">Expires in 10 minutes</p>
+              </div>
+            )}
+
+            <form onSubmit={handleOtp} className="mt-4 space-y-4">
               <div>
                 <label className="mb-1 block text-sm font-medium text-gray-700 dark:text-gray-300">OTP Code</label>
                 <input type="text" inputMode="numeric" maxLength={6} required value={form.otp}
