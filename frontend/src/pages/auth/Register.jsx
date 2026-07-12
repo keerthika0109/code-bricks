@@ -53,7 +53,7 @@ export default function Register() {
       console.log('RES:', res);
       console.log('RES.data:', res.data);
       console.log('RES.data.otp:', res.data.otp);
-      setShowOtp(res.data.otp);
+      setShowOtp(res.otp);
       showToast('OTP generated!', 'success');
       setStep('otp');
     } catch (err) {
