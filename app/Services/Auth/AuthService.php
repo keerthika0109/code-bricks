@@ -3,12 +3,10 @@
 namespace App\Services\Auth;
 
 use App\Exceptions\UnauthorizedException;
-use App\Mail\LoginOtpMail;
 use App\Models\User;
 use App\Repositories\User\UserContract;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Mail;
 use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
 
 class AuthService implements AuthInterface
