@@ -39,32 +39,6 @@ export default function Register() {
     }
   };
 
-  const handleDetails = async (e) => {
-    e.preventDefault();
-    setErrors({});
-    setLoading(true);
-    try {
-      const res = await authApi.register({
-        name: form.name,
-        email: form.email,
-        password: form.password,
-        password_confirmation: form.password_confirmation
-      });
-      console.log('RES:', res);
-      console.log('RES.data:', res.data);
-      console.log('RES.data.otp:', res.data.otp);
-      setShowOtp(res.otp);
-      showToast('OTP generated!', 'success');
-      setStep('otp');
-    } catch (err) {
-      console.log('ERR:', err);
-      setErrors(err.errors || {});
-      showToast(err.message || 'Something went wrong', 'error');
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const handleOtp = async (e) => {
     e.preventDefault();
     setErrors({});
