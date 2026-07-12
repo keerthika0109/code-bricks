@@ -28,7 +28,7 @@ export default function Register() {
         password: form.password,
         password_confirmation: form.password_confirmation
       });
-      setShowOtp(res.data.data.otp);
+      setShowOtp(res.data.otp);
       showToast('OTP generated!', 'success');
       setStep('otp');
     } catch (err) {
